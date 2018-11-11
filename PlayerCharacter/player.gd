@@ -19,8 +19,8 @@ var hintsl2 = [
 	"There’s a lot of drawers in the kitchen. If I’m lucky, I might be able to find something useful in there."]
 var hintsl2_index = 0
 
-var photo_pieces = 4
-var l3_puz_pieces = 2
+var photo_pieces = 0
+var l3_puz_pieces = 0
 
 var l3_key = false
 
@@ -112,6 +112,12 @@ func _physics_process(delta):
 			$Tween.start()
 			
 			collider.queue_free()
+			
+		elif collider.get_name() == "ENDING" :
+			if l1_clue + l2_clue + l3_clue  > 5 :
+				world.message.show_text("")
+			else :
+				world.message.show_text("")
 	
 	if !world.message_up && !world.phone_up:
 		if Input.is_action_pressed("up"):

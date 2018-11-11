@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://MainMap.gd" type="Script" id=1]
 [ext_resource path="res://Sounds/background.ogg" type="AudioStream" id=2]
@@ -132,6 +132,11 @@ extents = Vector2( 5, 30.6469 )
 
 custom_solver_bias = 0.0
 extents = Vector2( 8.60121, 31.9788 )
+
+[sub_resource type="RectangleShape2D" id=9]
+
+custom_solver_bias = 0.0
+extents = Vector2( 35.1382, 15.2541 )
 
 [node name="World" type="Node" index="0"]
 
@@ -1384,6 +1389,23 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( -0.736084, 2.2083 )
 shape = SubResource( 6 )
+
+[node name="ENDING" type="Area2D" parent="Areas/L3" index="7"]
+
+position = Vector2( 380.443, -550.384 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+monitoring = false
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L3/ENDING" index="0"]
+
+position = Vector2( -4.60425, 28.1164 )
+shape = SubResource( 9 )
 
 [node name="Tween" type="Tween" parent="." index="9"]
 

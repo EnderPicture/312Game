@@ -296,7 +296,6 @@ func _on_Yes_pressed():
 			world.doorl3_locked1_2.open()
 			nap_text.text = "The door is already open"
 			ye_button_lable.text = dismiss
-			down()
 
 
 
