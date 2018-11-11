@@ -20,10 +20,9 @@ var hintsl2 = [
 var hintsl2_index = 0
 
 var photo_pieces = 4
-var p02 = 0
-var c02 = 0
-var p03 = 0
-var c03 = 0
+var l3_puz_pieces = 2
+
+var l3_key = false
 
 var max_photo_pieces = 1
 
@@ -101,7 +100,7 @@ func _physics_process(delta):
 			world.doorl3_1.close()
 			world.doorl3_2.close()
 			world.doorl3_3.close()
-			#world.phone.entered_l2()
+			world.phone.entered_l3()
 			level = 3
 			last_unix_time = -1
 			$"Light2D2".enabled = true
@@ -153,7 +152,7 @@ func _physics_process(delta):
 						world.message.show_text("The fourth of the five photo pieces, the edges ragged from where it’s been torn. It looks familiar, but I can’t tell what the picture is of yet. I pick it up.")
 					elif photo_pieces == 5 :
 						world.message.show_text("The final piece of the photo, the edges ragged from where it’s been torn. I have all five pieces now. I pull them out and arrange them around until I’ve reassembled the photo. I gasp, both in shock and rage. It’s a photo of me and Kyle from early last year.")
-						
+				
 				elif parrent_collider.type == "clue1-1" :
 					world.message.show_text("There’s a photo frame here. Is it the one the photo pieces are from? I pick it up and freeze. This is my photo frame, I recognize it. The kidnapper had broken it in and stolen it. How long has he been following us?")
 					world.l1_clue += 1
@@ -165,6 +164,16 @@ func _physics_process(delta):
 					world.l1_clue += 1
 				elif parrent_collider.type == "" :
 					world.message.show_text("There’s nothing in here. I kick it out of the way in frustration.")
+				
+				elif "L3-puz" in parrent_collider.type :
+					l3_puz_pieces += 1
+					
+					if l3_puz_pieces == 1 :
+						world.message.show_text("One of the three keys I need to get to Kyle. I pick it up.")
+					if l3_puz_pieces == 2 :
+						world.message.show_text("Two of the three keys I need to get to Kyle. I pick it up.")
+					if l3_puz_pieces == 3 :
+						world.message.show_text("Three of the three keys I need to get to Kyle. I pick it up.")
 				
 			if "Interaction_pointL2" in collider.get_name() :
 				if "Interaction_pointL2-1" in collider.get_name() :
@@ -231,6 +240,38 @@ func _physics_process(delta):
 				world.l2_p5 = true
 				world.message.show_text(puzzleL2[3])
 				collider.queue_free()
+			
+			elif collider.get_name() == "ClueL3-1" :
+				world.l3_clue += 1
+				world.message.show_text("There’s an obituary here. Part of it is torn off, but the rest is still readable. “Came in full of joy and left too early. Know you were loved and will be missed.” I shudder. Why would the kidnapper keep something like this? I put it back, looking at it made me feel apprehensive.")
+				collider.queue_free()
+			elif collider.get_name() == "ClueL3-2" :
+				if l3_key :
+					world.l3_clue += 1
+					world.message.show_text("I slip the key in and turn it. The lock box smoothly pops open. This is an official police statement dated for February last year. It’s an interview with a driver involved in a crash. The officer made note that the driver was in a state of shock and kept asking about their passenger. Who would keep something like this? I put it back down. Thinking about it was giving me a headache.")
+					collider.queue_free()
+				else : 
+					world.message.show_text("There’s a small locked box on the ground here. I try to open it, but it doesn’t budge. I wonder if the key is around here somewhre/")
+			elif collider.get_name() == "ClueL3-3" :
+				if l3_key :
+					world.l3_clue += 1
+					world.message.show_text("I slip the key in and turn it. The lock box smoothly pops open. There’s a set of car keys here- my car keys. I sold my last car after it broke down. Why would the kidnapper put them here?")
+					collider.queue_free()
+				else : 
+					world.message.show_text("There’s a small locked box on the ground here. I try to open it, but it doesn’t budge. I wonder if the key is around here somewhre/")
+			elif collider.get_name() == "KeyL3" :
+				l3_key = true
+				world.message.show_text("There’s an envelope on the floor. I pick it up and a small key and a string of numbers falls out. They might be useful, I take them both.")
+				collider.queue_free()
+			elif collider.get_name() == "lockeddoorL3-2" :
+				if l3_key : 
+					world.doorl3_locked2_1.open()
+					world.message.show_text("I punch in the code and the key pad chirps and turns green. The door pops open, unlocked.")
+					collider.queue_free()
+				else : 
+					world.message.show_text("I pull on the door, but it’s locked. I look around- a key pad next to the door blinks at me and asks for a pin number. If I can find one, I can get in here.")
+			elif collider.get_name() == "lockeddoorL3-3" :
+				world.message.show_text("The door is locked, but I know Kyle is behind it. I bang on the door and call his name, but can’t make out any response. I’ll have to solve the kidnapper’s puzzle before I can get it.")
 
 	if motion.length() == 0:
 		$"Sprite/AnimationPlayer".stop()

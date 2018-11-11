@@ -37,6 +37,11 @@ var l2convo_part2 = "How do you know what it looks like!?"
 
 var nap_lie_text = "Why are you lying to me? Tell the truth."
 
+var l3convo_part1 = "Of course it is- don’t even ask."
+var l3convo_part2 = "The truth is you stole my child."
+var l3convo_part3 = "I did what you asked, now let me see him."
+
+
 onready var buttons = [
 	$ShakeCon/PhoneScreen/ScrollHandle/Bottom/Button1,
 	$ShakeCon/PhoneScreen/ScrollHandle/Bottom/Button2,
@@ -113,25 +118,47 @@ func question_l2() :
 	nap_text.text = " I want you to tell me about the hardest time in your life. Take your time- reminisce, think about it. Call me when you have your answer."
 
 func end_l2() :
+	if !should_reset :
+		return
 	
 	ye_button.show()
 	no_button.show()
 	
-	ye_button_lable.text = "Yes"
+	if !lie_once:
+		ye_button_lable.text = "Yes"
+		nap_text.text = "Are you ready to answer my questions?"
+	else :
+		ye_button_lable.text = "tell the truth."
+		if !deny_once :
+			nap_text.text = nap_lie_text
+		else : 
+			nap_text.text = "I know when you’re lying. Stop it, just tell the truth."
+	
 	no_button_lable.text = "No"
 	
-	nap_text.text = "Are you ready to answer my questions?"
+	
 	reset_bottom_buttons()
 	up()
+	
+func entered_l3() :
+	level = 3
+	nap_text.text = "This is the final room. I’ve hidden 3 keys, you’ll need all of them to unlock the last door. After that, you’ll never hear from me again. I just hope you find what you’re looking for..."
+	ye_button.show()
+	ye_button_lable.text = dismiss
+	no_button.hide()
+	down()
+	start_shake()
+	
+func end_l3() :
+	nap_text.text =  "Are you sure this is what you want?"
+	ye_button_lable.text = l3convo_part1
+	down()
+	start_shake()
 
 func reset_bottom_buttons():
 	
-	print("---------")
-	print(options)
 	options.clear()
-	print(options)
 	options.append(ignore)
-	print(options)
 	if world.l2_p1:
 		options.append(win)
 	if world.l2_p2 && !lie_removed[0]:
@@ -142,7 +169,6 @@ func reset_bottom_buttons():
 		options.append(lie[2])
 	if world.l2_p5 && !lie_removed[3]:
 		options.append(lie[3])
-	print(options)
 	
 	if lie_once :
 		if deny_once :
@@ -163,7 +189,6 @@ func start_shake() :
 func end_shake() :
 	$AnimationPlayer.current_animation = ""
 	shake = false
-	
 
 func _process(delta):
 	if shake:
@@ -179,18 +204,22 @@ func _bottom_button_pressed(index):
 	if options[index] == lie[0] :
 		lie_removed[0] = true
 		lie_once = true
+		ye_button_lable.text = "tell the truth."
 		nap_text.text = nap_lie_text
 	if options[index] == lie[1] :
 		lie_removed[1] = true
 		lie_once = true
+		ye_button_lable.text = "tell the truth."
 		nap_text.text = nap_lie_text
 	if options[index] == lie[2] :
 		lie_removed[2] = true
 		lie_once = true
+		ye_button_lable.text = "tell the truth."
 		nap_text.text = nap_lie_text
 	if options[index] == lie[3] :
 		lie_removed[3] = true
 		lie_once = true
+		ye_button_lable.text = "tell the truth."
 		nap_text.text = nap_lie_text
 	
 	if options[index] == deny :
@@ -199,7 +228,7 @@ func _bottom_button_pressed(index):
 		deny_once = true
 		
 	elif options[index] == win :
-		nap_text = "Good. I’m glad you were able to admit the truth. The door is unlocked, go through."
+		nap_text.text = "Good. I’m glad you were able to admit the truth. The door is unlocked, go through."
 		world.l2_clue += 1
 		ye_button_lable.text = dismiss
 		no_button.hide()
@@ -225,6 +254,9 @@ func _bottom_button_pressed(index):
 			question_l2()
 
 func _on_Yes_pressed():
+	
+	print(level)
+	print(ye_button_lable.text == l3convo_part1)
 	
 	if ye_button_lable.text == dismiss :
 		down()
@@ -252,8 +284,19 @@ func _on_Yes_pressed():
 			nap_text.text = " I want you to tell me about the hardest time in your life. Take your time- reminisce, think about it. Call me when you have your answer."
 		elif ye_button_lable.text == "tell the truth." || ye_button_lable.text == "Yes":
 			reset_bottom_buttons()
-			#TODO fix this
 			$"ShakeCon/PhoneScreen/ScrollHandle".show_bottom()
+	elif level == 3 :
+		if ye_button_lable.text == l3convo_part1 :
+			ye_button_lable.text = l3convo_part2
+			nap_text.text = "I just worry you can’t accept the truth."
+		elif ye_button_lable.text == l3convo_part2 :
+			ye_button_lable.text = l3convo_part3
+		elif ye_button_lable.text == l3convo_part3 :
+			world.doorl3_locked1_1.open()
+			world.doorl3_locked1_2.open()
+			#TODO
+			nap_text.text = ""
+			down()
 
 
 

@@ -39,5 +39,7 @@ func close_text():
 			
 			if "I have all five pieces now." in text_box.pending_text :
 				world.phone.end_l1()
+			if "Three of the three" in text_box.pending_text :
+				world.phone.end_l3() 
 		else :
 			text_box.next_section()
