@@ -115,9 +115,9 @@ func _physics_process(delta):
 			
 		elif collider.get_name() == "ENDING" :
 			if world.l1_clue + world.l2_clue + world.l3_clue  > 5 :
-				world.message.show_text("")
+				world.message.show_text("good ending")
 			else :
-				world.message.show_text("")
+				world.message.show_text("bad ending")
 	
 	if !world.message_up && !world.phone_up:
 		if Input.is_action_pressed("up"):
