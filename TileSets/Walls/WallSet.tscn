@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://TileSets/Walls/PNGs/HotTop.png" type="Texture" id=1]
 [ext_resource path="res://TileSets/Walls/PNGs/BigBed.png" type="Texture" id=2]
@@ -23,6 +23,17 @@
 [ext_resource path="res://TileSets/Walls/Crate.tscn" type="PackedScene" id=21]
 [ext_resource path="res://TileSets/Walls/Barrel.tscn" type="PackedScene" id=22]
 [ext_resource path="res://TileSets/Walls/PNGs/Clue.png" type="Texture" id=23]
+[ext_resource path="res://TileSets/Walls/PNGs/Chest.png" type="Texture" id=24]
+[ext_resource path="res://TileSets/Walls/PNGs/Desk.png" type="Texture" id=25]
+[ext_resource path="res://TileSets/Walls/PNGs/Doctor.png" type="Texture" id=26]
+[ext_resource path="res://TileSets/Walls/PNGs/Doctor w desk.png" type="Texture" id=27]
+[ext_resource path="res://TileSets/Walls/PNGs/Crib.png" type="Texture" id=28]
+[ext_resource path="res://TileSets/Walls/PNGs/Shelf1.png" type="Texture" id=29]
+[ext_resource path="res://TileSets/Walls/PNGs/Shelf2.png" type="Texture" id=30]
+[ext_resource path="res://TileSets/Walls/PNGs/Shelf3.png" type="Texture" id=31]
+[ext_resource path="res://TileSets/Walls/PNGs/Shelf4.png" type="Texture" id=32]
+[ext_resource path="res://TileSets/Walls/PNGs/Shelf5.png" type="Texture" id=33]
+[ext_resource path="res://TileSets/Walls/PNGs/Stool.png" type="Texture" id=34]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -124,6 +135,56 @@ extents = Vector2( 8, 8 )
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -8, 0, -8, -16, 8, -16, 8, 0 )
+
+[sub_resource type="RectangleShape2D" id=21]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.00525, 8.0481 )
+
+[sub_resource type="RectangleShape2D" id=22]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.07582, 7.62323 )
+
+[sub_resource type="RectangleShape2D" id=23]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.62304, 10 )
+
+[sub_resource type="RectangleShape2D" id=24]
+
+custom_solver_bias = 0.0
+extents = Vector2( 12.0408, 8.01176 )
+
+[sub_resource type="RectangleShape2D" id=25]
+
+custom_solver_bias = 0.0
+extents = Vector2( 7.95251, 10 )
+
+[sub_resource type="RectangleShape2D" id=26]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.05984, 10 )
+
+[sub_resource type="RectangleShape2D" id=27]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.03284, 10 )
+
+[sub_resource type="RectangleShape2D" id=28]
+
+custom_solver_bias = 0.0
+extents = Vector2( 7.94536, 10 )
+
+[sub_resource type="RectangleShape2D" id=29]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.00444, 10 )
+
+[sub_resource type="RectangleShape2D" id=30]
+
+custom_solver_bias = 0.0
+extents = Vector2( 5.75042, 5.94293 )
 
 [node name="Node" type="Node"]
 
@@ -261,7 +322,6 @@ shape = SubResource( 6 )
 
 [node name="Island" type="Sprite" parent="." index="6"]
 
-editor/display_folded = true
 position = Vector2( 36.9723, 119.472 )
 texture = ExtResource( 7 )
 
@@ -283,6 +343,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="LittleBed" type="Sprite" parent="." index="7"]
 
+editor/display_folded = true
 position = Vector2( 75.1492, 24.3537 )
 texture = ExtResource( 8 )
 
@@ -304,7 +365,6 @@ shape = SubResource( 8 )
 
 [node name="DinnerTable" type="Sprite" parent="." index="8"]
 
-editor/display_folded = true
 position = Vector2( 44.7279, 201.492 )
 texture = ExtResource( 9 )
 _sections_unfolded = [ "Offset" ]
@@ -517,7 +577,6 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="NightStand" type="Sprite" parent="." index="18"]
 
-editor/display_folded = true
 position = Vector2( 110.738, 32.7656 )
 texture = ExtResource( 19 )
 
@@ -539,6 +598,7 @@ shape = SubResource( 18 )
 
 [node name="Wall" type="Sprite" parent="." index="19"]
 
+editor/display_folded = true
 position = Vector2( 255.033, 181.752 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -581,6 +641,7 @@ texture = ExtResource( 23 )
 
 [node name="Wall2" type="Sprite" parent="." index="23"]
 
+editor/display_folded = true
 position = Vector2( 284.151, 181.752 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -612,6 +673,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall3" type="Sprite" parent="." index="24"]
 
+editor/display_folded = true
 position = Vector2( 317.475, 181.752 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -643,6 +705,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall4" type="Sprite" parent="." index="25"]
 
+editor/display_folded = true
 position = Vector2( 247.268, 224.458 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -674,6 +737,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall5" type="Sprite" parent="." index="26"]
 
+editor/display_folded = true
 position = Vector2( 289.004, 226.076 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -705,6 +769,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall7" type="Sprite" parent="." index="27"]
 
+editor/display_folded = true
 position = Vector2( 358.185, 236.92 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -736,6 +801,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall8" type="Sprite" parent="." index="28"]
 
+editor/display_folded = true
 position = Vector2( 384.756, 235.46 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -767,6 +833,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall9" type="Sprite" parent="." index="29"]
 
+editor/display_folded = true
 position = Vector2( 410.159, 235.46 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -798,6 +865,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall10" type="Sprite" parent="." index="30"]
 
+editor/display_folded = true
 position = Vector2( 434.978, 236.044 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -829,6 +897,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall11" type="Sprite" parent="." index="31"]
 
+editor/display_folded = true
 position = Vector2( 457.169, 236.044 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -860,6 +929,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall12" type="Sprite" parent="." index="32"]
 
+editor/display_folded = true
 position = Vector2( 458.921, 278.09 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -891,6 +961,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall13" type="Sprite" parent="." index="33"]
 
+editor/display_folded = true
 position = Vector2( 436.146, 277.506 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -922,6 +993,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall14" type="Sprite" parent="." index="34"]
 
+editor/display_folded = true
 position = Vector2( 408.699, 276.047 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -953,6 +1025,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall15" type="Sprite" parent="." index="35"]
 
+editor/display_folded = true
 position = Vector2( 380.084, 274.879 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -984,6 +1057,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall16" type="Sprite" parent="." index="36"]
 
+editor/display_folded = true
 position = Vector2( 353.805, 274.879 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -1015,6 +1089,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall17" type="Sprite" parent="." index="37"]
 
+editor/display_folded = true
 position = Vector2( 355.849, 327.729 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -1046,6 +1121,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall18" type="Sprite" parent="." index="38"]
 
+editor/display_folded = true
 position = Vector2( 380.96, 326.853 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -1077,6 +1153,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall19" type="Sprite" parent="." index="39"]
 
+editor/display_folded = true
 position = Vector2( 353.805, 364.519 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -1108,6 +1185,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall20" type="Sprite" parent="." index="40"]
 
+editor/display_folded = true
 position = Vector2( 380.038, 364.344 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -1136,5 +1214,245 @@ _sections_unfolded = [ "Transform" ]
 occluder = SubResource( 20 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
+
+[node name="Chest" type="Sprite" parent="." index="41"]
+
+position = Vector2( 36.53, 240.493 )
+texture = ExtResource( 24 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Chest" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chest/StaticBody2D" index="0"]
+
+shape = SubResource( 21 )
+
+[node name="Desk" type="Sprite" parent="." index="42"]
+
+position = Vector2( 90.6664, 158.945 )
+texture = ExtResource( 25 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Desk" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Desk/StaticBody2D" index="0"]
+
+shape = SubResource( 22 )
+
+[node name="Doctor" type="Sprite" parent="." index="43"]
+
+position = Vector2( 64.2676, 154.902 )
+texture = ExtResource( 26 )
+offset = Vector2( -1, 0 )
+_sections_unfolded = [ "Offset", "Transform", "Z Index" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Doctor" index="0"]
+
+scale = Vector2( 0.5, 0.5 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doctor/StaticBody2D" index="0"]
+
+position = Vector2( -1.88729, 9.50126 )
+scale = Vector2( 2.08543, 0.791017 )
+shape = SubResource( 23 )
+
+[node name="Doctor w desk" type="Sprite" parent="." index="44"]
+
+position = Vector2( 121.822, 158.945 )
+texture = ExtResource( 27 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Doctor w desk" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Doctor w desk/StaticBody2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 13.0431, 18.0206, 13.0511, -0.980179, 8.12221, -1.15382, 7.96703, -8.17294, -7.90569, -8.17294, -8.01825, -1.00583, -12.8964, -0.968307, -13.0318, 18.1337 )
+
+[node name="Crib" type="Sprite" parent="." index="45"]
+
+position = Vector2( 129.194, 118.515 )
+texture = ExtResource( 28 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Crib" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Crib/StaticBody2D" index="0"]
+
+shape = SubResource( 24 )
+
+[node name="Shelf1" type="Sprite" parent="." index="46"]
+
+position = Vector2( 90.6212, 244.034 )
+texture = ExtResource( 29 )
+offset = Vector2( 0, -28 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Shelf1" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf1/StaticBody2D" index="0"]
+
+position = Vector2( 0, -19.2457 )
+scale = Vector2( 1, 1.32149 )
+shape = SubResource( 25 )
+
+[node name="Shelf2" type="Sprite" parent="." index="47"]
+
+position = Vector2( 116.432, 249.978 )
+texture = ExtResource( 30 )
+offset = Vector2( 0, -13 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Shelf2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf2/StaticBody2D" index="0"]
+
+position = Vector2( 0, -7.05722 )
+scale = Vector2( 1, 0.864219 )
+shape = SubResource( 26 )
+
+[node name="Shelf3" type="Sprite" parent="." index="48"]
+
+position = Vector2( 144.394, 247.11 )
+texture = ExtResource( 31 )
+offset = Vector2( 0, -18 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Shelf3" index="0"]
+
+position = Vector2( 0, -0.28479 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf3/StaticBody2D" index="0"]
+
+position = Vector2( 0.0394592, -9.41974 )
+scale = Vector2( 1, 0.834022 )
+shape = SubResource( 27 )
+
+[node name="Shelf4" type="Sprite" parent="." index="49"]
+
+position = Vector2( 170.564, 248.034 )
+texture = ExtResource( 32 )
+offset = Vector2( 0, -18 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Shelf4" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf4/StaticBody2D" index="0"]
+
+position = Vector2( 0, -9.21037 )
+scale = Vector2( 1, 0.820431 )
+shape = SubResource( 28 )
+
+[node name="Shelf5" type="Sprite" parent="." index="50"]
+
+position = Vector2( 198.525, 248.11 )
+texture = ExtResource( 33 )
+offset = Vector2( 0, -18 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Shelf5" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf5/StaticBody2D" index="0"]
+
+position = Vector2( -0.0261993, -9.45157 )
+scale = Vector2( 1, 0.842531 )
+shape = SubResource( 29 )
+
+[node name="Stool" type="Sprite" parent="." index="51"]
+
+position = Vector2( 88.1118, 180.676 )
+texture = ExtResource( 34 )
+offset = Vector2( 2, 0 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Stool" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stool/StaticBody2D" index="0"]
+
+position = Vector2( 2, 0 )
+shape = SubResource( 30 )
 
 
