@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TileSets/Floor/PNGs/HouseFloor.png" type="Texture" id=1]
+[ext_resource path="res://TileSets/Floor/PNGs/Floor2.png" type="Texture" id=2]
+
+[node name="Node" type="Node"]
+
+[node name="HouseFloor" type="Sprite" parent="." index="0"]
+
+position = Vector2( 14.9983, 8.30044 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="Floor2" type="Sprite" parent="." index="1"]
+
+position = Vector2( 41.5407, 8.0001 )
+texture = ExtResource( 2 )
+
+

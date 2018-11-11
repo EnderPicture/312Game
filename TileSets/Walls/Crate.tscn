@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://TileSets/Walls/PNGs/crate.png" type="Texture" id=1]
+[ext_resource path="res://TileSets/Walls/destructible.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 6.0815, 5.60925 )
+
+[sub_resource type="OccluderPolygon2D" id=2]
+
+closed = true
+cull_mode = 0
+polygon = PoolVector2Array( -5.46457, -7.49094, -5.33922, 3.414, 6.69383, 3.47667, 6.50581, -7.49094 )
+
+[node name="crate" type="Sprite"]
+
+texture = ExtResource( 1 )
+offset = Vector2( 0, -4 )
+script = ExtResource( 2 )
+_sections_unfolded = [ "Offset", "Transform", "Z Index" ]
+type = "nothing"
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="0"]
+
+input_pickable = false
+collision_layer = 3
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Collision", "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="0"]
+
+position = Vector2( 0.598892, -2.00233 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="." index="1"]
+
+occluder = SubResource( 2 )
+light_mask = 1
+
+

@@ -1,0 +1,466 @@
+[gd_resource type="TileSet" load_steps=47 format=2]
+
+[ext_resource path="res://TileSets/Floor/PNGs/HouseFloor.png" type="Texture" id=1]
+[ext_resource path="res://TileSets/Floor/PNGs/Floor2.png" type="Texture" id=2]
+[ext_resource path="res://TileSets/Walls/PNGs/DinnerTable.png" type="Texture" id=3]
+[ext_resource path="res://TileSets/Walls/PNGs/Door.png" type="Texture" id=4]
+[ext_resource path="res://TileSets/Walls/PNGs/Dresser.png" type="Texture" id=5]
+[ext_resource path="res://TileSets/Walls/PNGs/StorageShelf1.png" type="Texture" id=6]
+[ext_resource path="res://TileSets/Walls/PNGs/StorageShelf2.png" type="Texture" id=7]
+[ext_resource path="res://TileSets/Walls/PNGs/StorageShelf3.png" type="Texture" id=8]
+[ext_resource path="res://TileSets/Walls/PNGs/Stove.png" type="Texture" id=9]
+[ext_resource path="res://TileSets/Walls/PNGs/Fridge.png" type="Texture" id=10]
+[ext_resource path="res://TileSets/Walls/PNGs/MazeWall.png" type="Texture" id=11]
+[ext_resource path="res://TileSets/Walls/PNGs/Sink.png" type="Texture" id=12]
+[ext_resource path="res://TileSets/Walls/PNGs/HotTop.png" type="Texture" id=13]
+[ext_resource path="res://TileSets/Walls/PNGs/NightStand.png" type="Texture" id=14]
+[ext_resource path="res://TileSets/Walls/PNGs/Wall.png" type="Texture" id=15]
+[ext_resource path="res://TileSets/Walls/PNGs/crate.png" type="Texture" id=16]
+[ext_resource path="res://TileSets/Walls/PNGs/Barrel.png" type="Texture" id=17]
+[ext_resource path="res://TileSets/Walls/PNGs/Clue.png" type="Texture" id=18]
+[ext_resource path="res://TileSets/Walls/PNGs/BigBed.png" type="Texture" id=19]
+[ext_resource path="res://TileSets/Walls/PNGs/Cabinet1.png" type="Texture" id=20]
+[ext_resource path="res://TileSets/Walls/PNGs/Cabinet2.png" type="Texture" id=21]
+[ext_resource path="res://TileSets/Walls/PNGs/CoffeeTable.png" type="Texture" id=22]
+[ext_resource path="res://TileSets/Walls/PNGs/Couch.png" type="Texture" id=23]
+[ext_resource path="res://TileSets/Walls/PNGs/Island.png" type="Texture" id=24]
+[ext_resource path="res://TileSets/Walls/PNGs/LittleBed.png" type="Texture" id=25]
+
+[sub_resource type="RectangleShape2D" id=9]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 6.37567 )
+
+[sub_resource type="RectangleShape2D" id=10]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=11]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=12]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=13]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=14]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=15]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=16]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=17]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=18]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=19]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 5.39806 )
+
+[sub_resource type="RectangleShape2D" id=20]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=21]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10.1055 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=8]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[resource]
+
+0/name = "HouseFloor"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 17, 17 )
+0/is_autotile = false
+0/occluder_offset = Vector2( 8.5, 8.5 )
+0/navigation_offset = Vector2( 8.5, 8.5 )
+0/shapes = [  ]
+1/name = "Floor2"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 16, 16 )
+1/is_autotile = false
+1/occluder_offset = Vector2( 8, 8 )
+1/navigation_offset = Vector2( 8, 8 )
+1/shapes = [  ]
+2/name = "HotTop"
+2/texture = ExtResource( 13 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 17, 20 )
+2/is_autotile = false
+2/occluder_offset = Vector2( 8.5, 10 )
+2/navigation_offset = Vector2( 8.5, 10 )
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 0.874326, 0, 0, 1, 8.49205, 10 )
+} ]
+3/name = "BigBed"
+3/texture = ExtResource( 19 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 32, 48 )
+3/is_autotile = false
+3/occluder_offset = Vector2( 16, 24 )
+3/navigation_offset = Vector2( 16, 24 )
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1.59698, 0, 0, 2.35884, 16, 23.8885 )
+} ]
+4/name = "Cabinet1"
+4/texture = ExtResource( 20 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 16, 20 )
+4/is_autotile = false
+4/occluder_offset = Vector2( 8, 10 )
+4/navigation_offset = Vector2( 8, 10 )
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 0.820796, 0, 0, 1, 7.88403, 10 )
+} ]
+5/name = "Cabinet2"
+5/texture = ExtResource( 21 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 16, 20 )
+5/is_autotile = false
+5/occluder_offset = Vector2( 8, 10 )
+5/navigation_offset = Vector2( 8, 10 )
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 0.825256, 0, 0, 1, 7.71004, 10 )
+} ]
+6/name = "CoffeeTable"
+6/texture = ExtResource( 22 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 16, 16 )
+6/is_autotile = false
+6/occluder_offset = Vector2( 8, 8 )
+6/navigation_offset = Vector2( 8, 8 )
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 0.811874, 0, 0, 0.825256, 7.76803, 8.11598 )
+} ]
+7/name = "Couch"
+7/texture = ExtResource( 23 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 33, 17 )
+7/is_autotile = false
+7/occluder_offset = Vector2( 16.5, 8.5 )
+7/navigation_offset = Vector2( 16.5, 8.5 )
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1.58806, 0, 0, 0.820795, 15.9201, 7.8621 )
+} ]
+8/name = "Island"
+8/texture = ExtResource( 24 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 48, 21 )
+8/is_autotile = false
+8/occluder_offset = Vector2( 24, 10.5 )
+8/navigation_offset = Vector2( 24, 10.5 )
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 2.39994, 0, 0, 1.03938, 24, 10.616 )
+} ]
+9/name = "LittleBed"
+9/texture = ExtResource( 25 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 16, 39 )
+9/is_autotile = false
+9/occluder_offset = Vector2( 8, 19.5 )
+9/navigation_offset = Vector2( 8, 19.5 )
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1.96723, 8, 19.268 )
+} ]
+10/name = "DinnerTable"
+10/texture = ExtResource( 3 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 48, 31 )
+10/is_autotile = false
+10/occluder_offset = Vector2( 24, 15.5 )
+10/navigation_offset = Vector2( 24, 15.5 )
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 2.4044, 0, 0, 1.55237, 23.5941, 21.0919 )
+} ]
+11/name = "Door"
+11/texture = ExtResource( 4 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 16, 24 )
+11/is_autotile = false
+11/occluder_offset = Vector2( 8, 12 )
+11/navigation_offset = Vector2( 8, 12 )
+11/shapes = [  ]
+12/name = "Dresser"
+12/texture = ExtResource( 5 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 16, 21 )
+12/is_autotile = false
+12/occluder_offset = Vector2( 8, 10.5 )
+12/navigation_offset = Vector2( 8, 10.5 )
+12/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 0.804961, 0, 0, 1.04763, 7.99904, 10.3633 )
+} ]
+13/name = "StorageShelf1"
+13/texture = ExtResource( 6 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 0, 16, 16 )
+13/is_autotile = false
+13/occluder_offset = Vector2( 8, 8 )
+13/navigation_offset = Vector2( 8, 8 )
+13/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 0.828635, 0, 0, 0.822717, 7.92303, 7.96152 )
+} ]
+14/name = "StorageShelf2"
+14/texture = ExtResource( 7 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 0, 0, 16, 16 )
+14/is_autotile = false
+14/occluder_offset = Vector2( 8, 8 )
+14/navigation_offset = Vector2( 8, 8 )
+14/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 0.819758, 0, 0, 0.828637, 7.96152, 7.7307 )
+} ]
+15/name = "StorageShelf3"
+15/texture = ExtResource( 8 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 0, 0, 17, 16 )
+15/is_autotile = false
+15/occluder_offset = Vector2( 8.5, 8 )
+15/navigation_offset = Vector2( 8.5, 8 )
+15/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 0.875987, 0, 0, 0.846393, 8.49998, 7.9615 )
+} ]
+16/name = "Stove"
+16/texture = ExtResource( 9 )
+16/tex_offset = Vector2( 0, -12 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 0, 0, 16, 32 )
+16/is_autotile = false
+16/occluder_offset = Vector2( 8, 16 )
+16/navigation_offset = Vector2( 8, 16 )
+16/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 0.822718, 0, 0, 1.60104, 7.84612, 4.077 )
+} ]
+17/name = "Fridge"
+17/texture = ExtResource( 10 )
+17/tex_offset = Vector2( 0, -10 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 0, 0, 16, 31 )
+17/is_autotile = false
+17/occluder_offset = Vector2( 8, 15.5 )
+17/navigation_offset = Vector2( 8, 15.5 )
+17/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 0.730975, 0, 0, 1.47083, 7.80762, 5.4231 )
+} ]
+18/name = "MazeWall"
+18/texture = ExtResource( 11 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 0, 0, 48, 48 )
+18/is_autotile = false
+18/occluder_offset = Vector2( 24, 24 )
+18/navigation_offset = Vector2( 24, 24 )
+18/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 2.84822, 0, 0, 2.86542, 123.934, 22.818 )
+} ]
+19/name = "Sink"
+19/texture = ExtResource( 12 )
+19/tex_offset = Vector2( 0, -2 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 0, 0, 16, 22 )
+19/is_autotile = false
+19/occluder_offset = Vector2( 8, 11 )
+19/navigation_offset = Vector2( 8, 11 )
+19/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 17 ),
+"shape_transform": Transform2D( 0.825677, 0, 0, 1.09794, 7.88459, 9.85761 )
+} ]
+20/name = "NightStand"
+20/texture = ExtResource( 14 )
+20/tex_offset = Vector2( 0, 0 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 0, 0, 16, 32 )
+20/is_autotile = false
+20/occluder_offset = Vector2( 8, 16 )
+20/navigation_offset = Vector2( 8, 16 )
+20/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 0.819557, 0, 0, 1.59814, 7.81648, 16.0212 )
+} ]
+21/name = "Wall"
+21/texture = ExtResource( 15 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 0, 0, 16, 32 )
+21/is_autotile = false
+21/occluder_offset = Vector2( 8, 16 )
+21/navigation_offset = Vector2( 8, 16 )
+21/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 19 ),
+"shape_transform": Transform2D( 0.831018, 0, 0, 1.60113, 8.08223, 22.6852 )
+} ]
+22/name = "crate"
+22/texture = ExtResource( 16 )
+22/tex_offset = Vector2( 0, 0 )
+22/modulate = Color( 1, 1, 1, 1 )
+22/region = Rect2( 0, 0, 17, 21 )
+22/is_autotile = false
+22/occluder_offset = Vector2( 8.5, 10.5 )
+22/navigation_offset = Vector2( 8.5, 10.5 )
+22/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 20 ),
+"shape_transform": Transform2D( 0.626528, 0, 0, 0.928914, 9.00903, 8.91626 )
+} ]
+23/name = "Barrel"
+23/texture = ExtResource( 17 )
+23/tex_offset = Vector2( 0, 0 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 0, 0, 15, 25 )
+23/is_autotile = false
+23/occluder_offset = Vector2( 7.5, 12.5 )
+23/navigation_offset = Vector2( 7.5, 12.5 )
+23/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 21 ),
+"shape_transform": Transform2D( 0.680912, 0, 0, 1.10586, 7.24545, 11.1238 )
+} ]
+24/name = "Clue"
+24/texture = ExtResource( 18 )
+24/tex_offset = Vector2( 0, 0 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 0, 0, 16, 16 )
+24/is_autotile = false
+24/occluder_offset = Vector2( 8, 8 )
+24/navigation_offset = Vector2( 8, 8 )
+24/shapes = [  ]
+

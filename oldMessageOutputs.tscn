@@ -1,0 +1,539 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 10.0
+
+[node name="Node" type="Node"]
+
+editor/display_folded = true
+
+[node name="01_p_01" type="StaticBody2D" parent="." index="0"]
+
+editor/display_folded = true
+position = Vector2( 637.008, -110.919 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="01_p_01" index="0"]
+
+position = Vector2( -1022.68, 149.433 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="01_p_02" type="StaticBody2D" parent="." index="1"]
+
+editor/display_folded = true
+position = Vector2( 509.811, -125.884 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="01_p_02" index="0"]
+
+position = Vector2( -998.789, 195.647 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="01_p_03" type="StaticBody2D" parent="." index="2"]
+
+editor/display_folded = true
+position = Vector2( 251.896, -123.683 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="01_p_03" index="0"]
+
+position = Vector2( -1011.99, 153.835 )
+scale = Vector2( 2.5, 2.5 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="01_p_04" type="StaticBody2D" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( 381.786, 17.7255 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="01_p_04" index="0"]
+
+position = Vector2( -1028.72, 144.152 )
+scale = Vector2( 1.5, 1.5 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="01_p_05" type="StaticBody2D" parent="." index="4"]
+
+editor/display_folded = true
+position = Vector2( 637.989, -43.8428 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="01_p_05" index="0"]
+
+position = Vector2( -1023, 142.831 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="01_p_06" type="StaticBody2D" parent="." index="5"]
+
+position = Vector2( 637.989, -43.8428 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="01_p_06" index="0"]
+
+position = Vector2( -1174.54, 41.6594 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="01_p_07" type="StaticBody2D" parent="." index="6"]
+
+editor/display_folded = true
+position = Vector2( 637.989, -43.8428 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="01_p_07" index="0"]
+
+position = Vector2( -1162.78, 217.347 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="01_c_01" type="StaticBody2D" parent="." index="7"]
+
+editor/display_folded = true
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="01_c_01" index="0"]
+
+position = Vector2( -570.861, 68.6267 )
+shape = SubResource( 2 )
+
+[node name="01_c_02" type="StaticBody2D" parent="." index="8"]
+
+position = Vector2( 336.841, -64.2658 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="01_c_02" index="0"]
+
+position = Vector2( -1027.84, 142.831 )
+scale = Vector2( 2.5, 2.5 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="01_c_03" type="StaticBody2D" parent="." index="9"]
+
+editor/display_folded = true
+position = Vector2( 717.991, 51.9278 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="01_c_03" index="0"]
+
+position = Vector2( -1029.16, 148.113 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="02_p_01" type="StaticBody2D" parent="." index="10"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="02_p_01" index="0"]
+
+position = Vector2( -1031.67, 153.132 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="02_p_02" type="StaticBody2D" parent="." index="11"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="02_p_02" index="0"]
+
+position = Vector2( -947.425, -4.35214 )
+scale = Vector2( 2.5, 2.5 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="02_p_03" type="StaticBody2D" parent="." index="12"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="02_p_03" index="0"]
+
+position = Vector2( -617.123, 52.7547 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="02_p_04" type="StaticBody2D" parent="." index="13"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="02_p_04" index="0"]
+
+position = Vector2( -506.057, -155.447 )
+scale = Vector2( 1.5, 1.5 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="02_p_05" type="StaticBody2D" parent="." index="14"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="02_p_05" index="0"]
+
+position = Vector2( -608.506, -154.766 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="02_p_06" type="StaticBody2D" parent="." index="15"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="02_p_06" index="0"]
+
+position = Vector2( -438.218, -43.8211 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="02_p_07" type="StaticBody2D" parent="." index="16"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="02_p_07" index="0"]
+
+position = Vector2( -916.536, 157.825 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="02_c_01" type="StaticBody2D" parent="." index="17"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="02_c_01" index="0"]
+
+position = Vector2( -674.156, -135.294 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="02_c_02" type="StaticBody2D" parent="." index="18"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="02_c_02" index="0"]
+
+position = Vector2( -1006.55, -10.8654 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="02_c_03" type="StaticBody2D" parent="." index="19"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="02_c_03" index="0"]
+
+position = Vector2( -836.121, -50.028 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="03_p_01" type="StaticBody2D" parent="." index="20"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="03_p_01" index="0"]
+
+position = Vector2( -366.396, -67.9942 )
+scale = Vector2( 1.5, 1.5 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="03_p_02" type="StaticBody2D" parent="." index="21"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="03_p_02" index="0"]
+
+position = Vector2( -364.933, -179.84 )
+scale = Vector2( 1.5, 1.5 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="03_p_03" type="StaticBody2D" parent="." index="22"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="03_p_03" index="0"]
+
+position = Vector2( -238.98, -132.21 )
+scale = Vector2( 1.5, 1.5 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="03_p_04" type="StaticBody2D" parent="." index="23"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="03_p_04" index="0"]
+
+position = Vector2( -1.41412, -283.089 )
+scale = Vector2( 2, 2 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="03_p_05" type="StaticBody2D" parent="." index="24"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="03_p_05" index="0"]
+
+position = Vector2( -406.071, -43.1426 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="03_c_01" type="StaticBody2D" parent="." index="25"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="03_c_01" index="0"]
+
+position = Vector2( -371.094, -408.126 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="03_c_02" type="StaticBody2D" parent="." index="26"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="03_c_02" index="0"]
+
+position = Vector2( -198.1, -56.0454 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="03_c_03" type="StaticBody2D" parent="." index="27"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="03_c_03" index="0"]
+
+position = Vector2( -116.017, 52.0419 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="03_c_04" type="StaticBody2D" parent="." index="28"]
+
+editor/display_folded = true
+position = Vector2( 379.8, -253.175 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="thingasdf" type="CollisionShape2D" parent="03_c_04" index="0"]
+
+position = Vector2( -245.393, 84.386 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+
