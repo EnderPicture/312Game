@@ -29,7 +29,7 @@ tracks/0/keys = {
 "values": [ true, false ]
 }
 
-[node name="phone" type="CanvasLayer"]
+[node name="phone" type="CanvasLayer" index="0"]
 
 layer = 10
 offset = Vector2( 0, 0 )
