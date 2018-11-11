@@ -294,8 +294,8 @@ func _on_Yes_pressed():
 		elif ye_button_lable.text == l3convo_part3 :
 			world.doorl3_locked1_1.open()
 			world.doorl3_locked1_2.open()
-			#TODO
-			nap_text.text = ""
+			nap_text.text = "The door is already open"
+			ye_button_lable.text = dismiss
 			down()
 
 
