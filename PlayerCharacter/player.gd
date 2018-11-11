@@ -114,7 +114,7 @@ func _physics_process(delta):
 			collider.queue_free()
 			
 		elif collider.get_name() == "ENDING" :
-			if l1_clue + l2_clue + l3_clue  > 5 :
+			if world.l1_clue + world.l2_clue + world.l3_clue  > 5 :
 				world.message.show_text("")
 			else :
 				world.message.show_text("")
