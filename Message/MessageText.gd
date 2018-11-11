@@ -63,7 +63,7 @@ func check_if_done() :
 
 func _animate() :
 	animating = true
-	$Tween.interpolate_property(self, "visible_characters", 0, len(text), len(text)*char_show_speed, Tween.TRANS_LINEAR,Tween.EASE_OUT, 0)
+	$Tween.interpolate_property(self, "visible_characters", 0, len(text), len(text)*char_show_speed, Tween.TRANS_LINEAR,Tween.EASE_IN, 0)
 	$Tween.start()
 
 func _on_Tween_tween_completed(object, key):
