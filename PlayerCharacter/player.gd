@@ -115,9 +115,17 @@ func _physics_process(delta):
 			
 		elif collider.get_name() == "ENDING" :
 			if world.l1_clue + world.l2_clue + world.l3_clue  > 5 :
-				world.message.show_text("good ending")
+				world.message.show_text(world.message.good_end[0])
 			else :
-				world.message.show_text("bad ending")
+				world.message.show_text(world.message.bad_end[0])
+			world.phone.clear_phone()
+			world.doorl3_locked1_1.close()
+			world.doorl3_locked1_2.close()
+			collider.queue_free()
+		elif collider.get_name() == "L0_teleport" :
+			world.phone.prestart()
+			collider.queue_free()
+			
 	
 	if !world.message_up && !world.phone_up:
 		if Input.is_action_pressed("up"):
@@ -147,7 +155,7 @@ func _physics_process(delta):
 				
 				if "photop" in parrent_collider.type :
 					photo_pieces += 1
-					
+					world.sound.play()
 					if photo_pieces == 1 :
 						world.message.show_text("One of the five pieces of the photo, the edges ragged from where it’s been torn. It looks familiar, but I can’t tell what the picture is of yet. I pick it up.")
 					elif photo_pieces == 2 :
@@ -160,20 +168,24 @@ func _physics_process(delta):
 						world.message.show_text("The final piece of the photo, the edges ragged from where it’s been torn. I have all five pieces now. I pull them out and arrange them around until I’ve reassembled the photo. I gasp, both in shock and rage. It’s a photo of me and Kyle from early last year.")
 				
 				elif parrent_collider.type == "clue1-1" :
+					world.sound.play()
 					world.message.show_text("There’s a photo frame here. Is it the one the photo pieces are from? I pick it up and freeze. This is my photo frame, I recognize it. The kidnapper had broken it in and stolen it. How long has he been following us?")
 					world.l1_clue += 1
 				elif parrent_collider.type == "clue1-2" :
+					world.sound.play()
 					world.message.show_text("There’s a stuffed animal here, clearly well loved. One of the ears is partly ripped off and he’s missing an eye- but he still looks charming. Kyle had one just like it when he was young- but how did it get here?")
 					world.l1_clue += 1
 				elif parrent_collider.type == "clue1-3" :
+					world.sound.play()
 					world.message.show_text("There’s a baby crib in here. My baby crib. I’d put it in storage when Kyle grew out of it. The kidnapper stole it and brought it all the way here- but why? Did he want me to find it? I shudder, not wanting to think about it.")
 					world.l1_clue += 1
 				elif parrent_collider.type == "" :
+					world.sound.play()
 					world.message.show_text("There’s nothing in here. I kick it out of the way in frustration.")
 				
 				elif "L3-puz" in parrent_collider.type :
 					l3_puz_pieces += 1
-					
+					world.sound.play()
 					if l3_puz_pieces == 1 :
 						world.message.show_text("One of the three keys I need to get to Kyle. I pick it up.")
 					if l3_puz_pieces == 2 :
@@ -202,10 +214,12 @@ func _physics_process(delta):
 					world.message.show_text(Interaction_pointL2[8])
 			elif "clueL2" in collider.get_name() :
 				if collider.get_name() == "clueL2-1" :
+					world.sound.play()
 					world.message.show_text(clueL2[0])
 					world.l2_clue += 1
 					collider.queue_free()
 				if collider.get_name() == "clueL2-2" :
+					world.sound.play()
 					world.message.show_text(clueL2[1])
 					world.l2_clue += 1
 					collider.queue_free()
@@ -225,34 +239,41 @@ func _physics_process(delta):
 				world.phone.end_l2() 
 			elif collider.get_name() == "puzzleL2-1-locked" :
 				if screwdriver : 
+					world.sound.play()
 					world.message.show_text("There’s a stack of photo albums in here. There are ages written on the sides instead of years or dates. I trace my number down the stack until I reach the last one. I slam the closet closed and take a shuddering breath. They’re my albums of someone very close to me- someone I lost. A lump settles in my stomach- the kidnapper planted these here. He wanted me to have this reaction. I take a breath to regain my composure. I have to push forward, for Kyle.")
 					world.l2_p1 = true
 					collider.queue_free()
 				else : 
 					world.message.show_text("I try to pull the door open, but it remains firmly shut. I wiggle the door. There’s some give. Maybe if I had a tool to pry it open, I could see what’s inside.")
 			elif collider.get_name() == "puzzleL2-2" :
+				world.sound.play()
 				world.l2_p2 = true
 				world.message.show_text(puzzleL2[0])
 				collider.queue_free()
 			elif collider.get_name() == "puzzleL2-3" :
+				world.sound.play()
 				world.l2_p3 = true
 				world.message.show_text(puzzleL2[1])
 				collider.queue_free()
 			elif collider.get_name() == "puzzleL2-4" :
+				world.sound.play()
 				world.l2_p4 = true
 				world.message.show_text(puzzleL2[2])
 				collider.queue_free()
 			elif collider.get_name() == "puzzleL2-5" :
+				world.sound.play()
 				world.l2_p5 = true
 				world.message.show_text(puzzleL2[3])
 				collider.queue_free()
 			
 			elif collider.get_name() == "ClueL3-1" :
+				world.sound.play()
 				world.l3_clue += 1
 				world.message.show_text("There’s an obituary here. Part of it is torn off, but the rest is still readable. “Came in full of joy and left too early. Know you were loved and will be missed.” I shudder. Why would the kidnapper keep something like this? I put it back, looking at it made me feel apprehensive.")
 				collider.queue_free()
 			elif collider.get_name() == "ClueL3-2" :
 				if l3_key :
+					world.sound.play()
 					world.l3_clue += 1
 					world.message.show_text("I slip the key in and turn it. The lock box smoothly pops open. This is an official police statement dated for February last year. It’s an interview with a driver involved in a crash. The officer made note that the driver was in a state of shock and kept asking about their passenger. Who would keep something like this? I put it back down. Thinking about it was giving me a headache.")
 					collider.queue_free()
@@ -260,12 +281,14 @@ func _physics_process(delta):
 					world.message.show_text("There’s a small locked box on the ground here. I try to open it, but it doesn’t budge. I wonder if the key is around here somewhre/")
 			elif collider.get_name() == "ClueL3-3" :
 				if l3_key :
+					world.sound.play()
 					world.l3_clue += 1
 					world.message.show_text("I slip the key in and turn it. The lock box smoothly pops open. There’s a set of car keys here- my car keys. I sold my last car after it broke down. Why would the kidnapper put them here?")
 					collider.queue_free()
 				else : 
 					world.message.show_text("There’s a small locked box on the ground here. I try to open it, but it doesn’t budge. I wonder if the key is around here somewhre/")
 			elif collider.get_name() == "KeyL3" :
+				world.sound.play()
 				l3_key = true
 				world.message.show_text("There’s an envelope on the floor. I pick it up and a small key and a string of numbers falls out. They might be useful, I take them both.")
 				collider.queue_free()

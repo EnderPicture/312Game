@@ -222,6 +222,7 @@ position = Vector2( 0, -10.94 )
 texture = ExtResource( 3 )
 vframes = 3
 hframes = 5
+frame = 11
 _sections_unfolded = [ "Animation", "Material", "Offset", "Visibility" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite" index="0"]

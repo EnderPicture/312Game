@@ -74,15 +74,31 @@ var deny_once = false
 
 export var shake = false
 
+var start_convo = [
+	"Hello?",
+	"What? Who is this?",
+	"Okay, okay. I understand. I’ll do what you say."
+]
+
 func _ready():
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
-	start_l1()
+	hidden(true)
+	pass
+	
+func prestart() :
+	level = 0
+	ye_button.show()
+	no_button.hide()
+	ye_button_lable.text = start_convo[0]
+	nap_text.text = ""
+	up()
+	
 
 func start_l1() :
 	level = 1
 	
-	down(true)
+	down()
 	ye_button.show()
 	no_button.hide()
 	
@@ -154,6 +170,12 @@ func end_l3() :
 	ye_button_lable.text = l3convo_part1
 	down()
 	start_shake()
+
+func clear_phone() :
+	nap_text.text = ""
+	ye_button_lable.text = dismiss
+	down()
+	
 
 func reset_bottom_buttons():
 	
@@ -255,14 +277,24 @@ func _bottom_button_pressed(index):
 
 func _on_Yes_pressed():
 	
-	print(level)
-	print(ye_button_lable.text == l3convo_part1)
+	
 	
 	if ye_button_lable.text == dismiss :
 		down()
 		return
 	
-	if level == 1 : 
+	if level == 0:
+		if ye_button_lable.text == start_convo[0] :
+			ye_button_lable.text = start_convo[1]
+			nap_text.text = "I have your son."
+		elif ye_button_lable.text == start_convo[1] :
+			ye_button_lable.text = start_convo[2]
+			nap_text.text = "It doesn’t matter who I am- what’s important is I have Kyle, and you have to come get him.\n\n\nI’m going to send you an address. Drive here – alone – and don’t call the cops. Do as I say, or you’ll never see him again."
+		elif ye_button_lable.text == start_convo[2]:
+			world.black()
+			down()
+
+	elif level == 1 : 
 		if ye_button_lable.text == text_hello :
 			nap_text.text = "Go inside"
 			ye_button_lable.text = text_ok

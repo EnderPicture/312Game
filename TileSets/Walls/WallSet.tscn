@@ -694,7 +694,6 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall3" type="Sprite" parent="." index="24"]
 
-editor/display_folded = true
 position = Vector2( 317.475, 181.752 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -722,11 +721,10 @@ _sections_unfolded = [ "Transform" ]
 
 occluder = SubResource( 20 )
 light_mask = 1
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="Wall4" type="Sprite" parent="." index="25"]
 
-editor/display_folded = true
 position = Vector2( 247.268, 224.458 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
@@ -754,7 +752,7 @@ _sections_unfolded = [ "Transform" ]
 
 occluder = SubResource( 20 )
 light_mask = 1
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="Wall5" type="Sprite" parent="." index="26"]
 
@@ -1206,7 +1204,6 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall20" type="Sprite" parent="." index="40"]
 
-editor/display_folded = true
 position = Vector2( 380.038, 364.344 )
 texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )

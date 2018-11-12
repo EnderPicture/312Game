@@ -26,6 +26,10 @@ onready var doorl3_locked2_1 = $"Walls/DoorL3-locked2-1"
 
 onready var env = $"WorldEnvironment"
 
+onready var sound = $InteractionSound
+
+onready var player = $Walls/Player
+
 var l1_clue = 0
 var l2_clue = 0
 var l3_clue = 0
@@ -36,6 +40,8 @@ var l2_p3 = false
 var l2_p4 = false
 var l2_p5 = false
 
+var teleported = false
+
 
 func dim_lights() :
 	
@@ -45,12 +51,31 @@ func dim_lights() :
 func env_exposure(exposure) :
 	env.environment.tonemap_exposure = exposure
 
+func black() : 
+	$Tween.interpolate_method(self, "env_exposure", env.environment.tonemap_exposure, 0, .5, Tween.TRANS_QUAD,Tween.EASE_OUT, 0)
+	$Tween.start()
+
+func normal() :
+	$Tween.interpolate_method(self, "env_exposure", env.environment.tonemap_exposure, 1, 5, Tween.TRANS_QUAD,Tween.EASE_IN_OUT, 0)
+	$Tween.start()
+
 func _ready():
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
+	message.show_text("Thank you, Doctor. I'll try to keep that in mind if the grief becomes too overwhelming.")
 	pass
 
 #func _process(delta):
 #	# Called every frame. Delta is time since last frame.
 #	# Update game logic here.
 #	pass
+
+
+func _on_Tween_tween_completed(object, key):
+	if !teleported :
+		teleported = true
+		player.position.x = -527.767029
+		player.position.y = 236.451996
+		phone.start_l1()
+		normal()
+		

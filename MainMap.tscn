@@ -1,22 +1,23 @@
-[gd_scene load_steps=52 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://MainMap.gd" type="Script" id=1]
 [ext_resource path="res://Sounds/background.ogg" type="AudioStream" id=2]
-[ext_resource path="res://LevelMap.png" type="Texture" id=3]
-[ext_resource path="res://TileSets/Floor/FloorSet.tres" type="TileSet" id=4]
-[ext_resource path="res://TileSets/Floor/shadow.tres" type="TileSet" id=5]
-[ext_resource path="res://TileSets/Walls/WallSet.tres" type="TileSet" id=6]
-[ext_resource path="res://TileSets/Walls/Barrel.tscn" type="PackedScene" id=7]
-[ext_resource path="res://TileSets/Walls/Crate.tscn" type="PackedScene" id=8]
-[ext_resource path="res://PlayerCharacter/player.tscn" type="PackedScene" id=9]
-[ext_resource path="res://TileSets/Walls/forcefield.tscn" type="PackedScene" id=10]
-[ext_resource path="res://TileSets/Walls/forcefield_side.tscn" type="PackedScene" id=11]
-[ext_resource path="res://TileSets/Walls/PNGs/Doctor.png" type="Texture" id=12]
-[ext_resource path="res://TextureRect.gd" type="Script" id=13]
-[ext_resource path="res://TitleScreen2.png" type="Texture" id=14]
-[ext_resource path="res://Instructions4 (1).png" type="Texture" id=15]
-[ext_resource path="res://Message/messageROOT.tscn" type="PackedScene" id=16]
-[ext_resource path="res://Phone/phone.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Sounds/PickUpSound1-Trimmed.ogg" type="AudioStream" id=3]
+[ext_resource path="res://LevelMap.png" type="Texture" id=4]
+[ext_resource path="res://TileSets/Floor/FloorSet.tres" type="TileSet" id=5]
+[ext_resource path="res://TileSets/Floor/shadow.tres" type="TileSet" id=6]
+[ext_resource path="res://TileSets/Walls/WallSet.tres" type="TileSet" id=7]
+[ext_resource path="res://TileSets/Walls/Barrel.tscn" type="PackedScene" id=8]
+[ext_resource path="res://TileSets/Walls/Crate.tscn" type="PackedScene" id=9]
+[ext_resource path="res://PlayerCharacter/player.tscn" type="PackedScene" id=10]
+[ext_resource path="res://TileSets/Walls/forcefield.tscn" type="PackedScene" id=11]
+[ext_resource path="res://TileSets/Walls/forcefield_side.tscn" type="PackedScene" id=12]
+[ext_resource path="res://TileSets/Walls/PNGs/Doctor.png" type="Texture" id=13]
+[ext_resource path="res://TextureRect.gd" type="Script" id=14]
+[ext_resource path="res://TitleScreen2.png" type="Texture" id=15]
+[ext_resource path="res://Instructions4 (1).png" type="Texture" id=16]
+[ext_resource path="res://Message/messageROOT.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Phone/phone.tscn" type="PackedScene" id=18]
 
 [sub_resource type="Environment" id=1]
 
@@ -108,6 +109,11 @@ _sections_unfolded = [ "Resource" ]
 flags = 4
 gradient = SubResource( 2 )
 width = 2048
+
+[sub_resource type="RectangleShape2D" id=35]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.729, 8.81895 )
 
 [sub_resource type="RectangleShape2D" id=4]
 
@@ -264,7 +270,7 @@ extents = Vector2( 7.87115, 5 )
 custom_solver_bias = 0.0
 extents = Vector2( 35.1382, 15.2541 )
 
-[node name="World" type="Node" index="0"]
+[node name="World" type="Node"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Pause" ]
@@ -276,13 +282,22 @@ environment = SubResource( 1 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="1"]
 
 stream = ExtResource( 2 )
-volume_db = 0.0
+volume_db = -10.0
 pitch_scale = 1.0
 autoplay = true
 mix_target = 0
 bus = "Master"
 
-[node name="ColorRect" type="ColorRect" parent="." index="2"]
+[node name="InteractionSound" type="AudioStreamPlayer" parent="." index="2"]
+
+stream = ExtResource( 3 )
+volume_db = -20.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="ColorRect" type="ColorRect" parent="." index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -300,20 +315,20 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 color = Color( 0, 0, 0, 1 )
 
-[node name="LevelMap" type="Sprite" parent="." index="3"]
+[node name="LevelMap" type="Sprite" parent="." index="4"]
 
 visible = false
 position = Vector2( -3.42102, -35.9413 )
 scale = Vector2( 0.614089, 0.614089 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Floor" type="TileMap" parent="." index="4"]
+[node name="Floor" type="TileMap" parent="." index="5"]
 
 mode = 0
-tile_set = ExtResource( 4 )
+tile_set = ExtResource( 5 )
 cell_size = Vector2( 16, 16 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -334,11 +349,11 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="shadow" type="TileMap" parent="." index="5"]
+[node name="shadow" type="TileMap" parent="." index="6"]
 
 z_index = 1
 mode = 0
-tile_set = ExtResource( 5 )
+tile_set = ExtResource( 6 )
 cell_size = Vector2( 16, 16 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -356,12 +371,11 @@ format = 1
 tile_data = PoolIntArray( -1310742, 0, 0, -1310741, 1610612737, 0, -1310740, 1610612737, 0, -1310739, 1610612737, 0, -1310738, 1610612737, 0, -1310737, 1610612737, 0, -1310736, 1610612737, 0, -1310735, 1610612737, 0, -1310734, 1610612737, 0, -1310733, 1610612737, 0, -1310732, 1610612737, 0, -1310730, 1610612737, 0, -1310729, 1610612737, 0, -1310728, 1610612737, 0, -1310727, 1610612737, 0, -1310726, 1610612737, 0, -1310725, 1610612737, 0, -1245224, 0, 0, -1245223, 1610612737, 0, -1245222, 1610612737, 0, -1245221, 1610612737, 0, -1245220, 1610612737, 0, -1245219, 1610612737, 0, -1245218, 1610612737, 0, -1245216, 1610612737, 0, -1245215, 1610612737, 0, -1245214, 1610612737, 0, -1245213, 1610612737, 0, -1245212, 1610612737, 0, -1245211, 1610612737, 0, -1245210, 1610612737, 0, -1245209, 1610612737, 0, -1245208, 1610612737, 0, -1245207, 1610612737, 0, -1048597, 0, 0, -1048596, 1610612737, 0, -1048595, 1610612737, 0, -1048594, 1610612737, 0, -1048592, 1610612737, 0, -1048591, 1610612737, 0, -1048590, -1610612736, 0, -983061, -1610612735, 0, -917525, -1610612735, 0, -720938, 0, 0, -720937, 1610612737, 0, -720936, 1610612737, 0, -720935, 1610612737, 0, -720934, 1610612737, 0, -720933, 1610612737, 0, -720931, 1610612737, 0, -720930, 1610612737, 0, -720929, 1610612737, 0, -720928, 1610612737, 0, -720927, 1610612737, 0, -720925, 1610612737, 0, -720924, 1610612737, 0, -720923, -1610612736, 0, -655402, -1610612735, 0, -655387, -1073741823, 0, -589866, -1610612735, 0, -589851, -1073741823, 0, -524330, -1610612735, 0, -458794, -1610612735, 0, -393258, -1610612735, 0, -393250, -1610612735, 0, -393249, 1610612737, 0, -393248, 1610612737, 0, -393247, 1610612737, 0, -393246, 1610612737, 0, -393245, 1610612737, 0, -393244, 1610612737, 0, -393243, -1610612736, 0, -327722, -1610612735, 0, -327714, -1610612735, 0, -327707, -1073741823, 0, -262178, -1610612735, 0, -262171, -1073741823, 0, -196643, -1610612735, 0, -196642, -1610612735, 0, -196635, -1073741823, 0, -131107, -1610612735, 0, -131106, -1610612735, 0, -131099, -1073741823, 0, -65570, -1610612735, 0, -50, 0, 0, -48, 0, 0, -47, 0, 0, 65487, 0, 0, 65488, 1610612737, 0, 65489, 1610612737, 0, 65490, 1610612737, 0, 65491, 1610612737, 0, 65492, 1610612737, 0, 65493, -1610612736, 0, 65495, 0, 0, 65496, 1610612737, 0, 65497, 1610612737, 0, 65498, 1610612737, 0, 65499, 1610612737, 0, 65500, 1610612737, 0, 65501, 1610612737, 0, 65502, 1610612737, 0, 65503, 1610612737, 0, 65504, 1610612737, 0, 65505, 1610612737, 0, 65506, 1610612737, 0, 65507, 1610612737, 0, 65508, 1610612737, 0, 65509, -1610612736, 0, 65510, 1610612737, 0, 131029, -1073741823, 0, 131031, -1610612735, 0, 131045, -1073741823, 0, 131047, 0, 0, 131048, 1610612737, 0, 131049, 1610612737, 0, 131050, 1610612737, 0, 131051, 1610612737, 0, 131052, 1610612737, 0, 131053, -1610612736, 0, 196563, 2, 0, 196564, 2, 0, 196566, 1610612737, 0, 196581, -1073741823, 0, 196583, -1610612735, 0, 196589, -1073741823, 0, 262118, 1610612737, 0, 262125, -1073741823, 0, 327637, -1073741823, 0, 327639, -1610612735, 0, 327661, -1073741823, 0, 393175, -1610612735, 0, 393189, -1073741823, 0, 393197, -1073741823, 0, 458711, -1610612735, 0, 458725, -1073741823, 0, 458733, -1073741823, 0, 524247, -1610612735, 0, 524261, -1073741823, 0, 524268, -1610612735, 0, 524269, -1073741823, 0, 589783, -1610612735, 0, 589797, -1073741823, 0, 589804, -1610612735, 0, 589805, -1073741823, 0, 655319, -1610612735, 0, 655333, -1073741823, 0, 655340, -1610612735, 0, 655341, -1073741823, 0, 720855, -1610612735, 0, 720869, -1073741823, 0, 720874, 0, 0, 720875, 1610612737, 0, 720876, 2, 0, 720877, -1610612734, 0, 720878, 1610612737, 0, 720879, -1610612736, 0, 786410, -1610612735, 0, 786413, -1073741822, 0, 786415, -1073741823, 0, 851946, -1610612735, 0, 851951, -1073741823, 0, 917482, -1610612735, 0, 917487, -1073741823, 0, 917488, -1610612735, 0 )
 _sections_unfolded = [ "Cell", "Material", "Visibility", "Z Index" ]
 
-[node name="Walls" type="TileMap" parent="." index="6"]
+[node name="Walls" type="TileMap" parent="." index="7"]
 
-editor/display_folded = true
 z_index = 2
 mode = 0
-tile_set = ExtResource( 6 )
+tile_set = ExtResource( 7 )
 cell_size = Vector2( 16, 16 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -382,326 +396,326 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Barrel" parent="Walls" index="0" instance=ExtResource( 7 )]
+[node name="Barrel" parent="Walls" index="0" instance=ExtResource( 8 )]
 
 position = Vector2( -567.579, 93.1646 )
 _sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 type = ""
 
-[node name="Barrel2" parent="Walls" index="1" instance=ExtResource( 7 )]
+[node name="Barrel2" parent="Walls" index="1" instance=ExtResource( 8 )]
 
 position = Vector2( -647.88, 30.4297 )
 type = ""
 
-[node name="Barrel3" parent="Walls" index="2" instance=ExtResource( 7 )]
+[node name="Barrel3" parent="Walls" index="2" instance=ExtResource( 8 )]
 
 position = Vector2( -648.955, 13.581 )
 type = ""
 
-[node name="Barrel4" parent="Walls" index="3" instance=ExtResource( 7 )]
+[node name="Barrel4" parent="Walls" index="3" instance=ExtResource( 8 )]
 
 position = Vector2( -632.106, 10.3546 )
 type = ""
 
-[node name="Barrel5" parent="Walls" index="4" instance=ExtResource( 7 )]
+[node name="Barrel5" parent="Walls" index="4" instance=ExtResource( 8 )]
 
 position = Vector2( -680.502, 13.2225 )
 type = ""
 
-[node name="Barrel6" parent="Walls" index="5" instance=ExtResource( 7 )]
+[node name="Barrel6" parent="Walls" index="5" instance=ExtResource( 8 )]
 
 position = Vector2( -761.161, 12.147 )
 type = ""
 
-[node name="Barrel7" parent="Walls" index="6" instance=ExtResource( 7 )]
+[node name="Barrel7" parent="Walls" index="6" instance=ExtResource( 8 )]
 
 position = Vector2( -778.727, 12.5055 )
 _sections_unfolded = [ "Offset", "Transform", "Visibility" ]
 type = ""
 
-[node name="Barrel8" parent="Walls" index="7" instance=ExtResource( 7 )]
+[node name="Barrel8" parent="Walls" index="7" instance=ExtResource( 8 )]
 
 position = Vector2( -776.934, 27.9203 )
 type = "photop5"
 
-[node name="Barrel9" parent="Walls" index="8" instance=ExtResource( 7 )]
+[node name="Barrel9" parent="Walls" index="8" instance=ExtResource( 8 )]
 
 position = Vector2( -756.284, 21.9763 )
 type = ""
 
-[node name="Barrel10" parent="Walls" index="9" instance=ExtResource( 7 )]
+[node name="Barrel10" parent="Walls" index="9" instance=ExtResource( 8 )]
 
 position = Vector2( -760.444, 44.4106 )
 type = ""
 
-[node name="Barrel11" parent="Walls" index="10" instance=ExtResource( 7 )]
+[node name="Barrel11" parent="Walls" index="10" instance=ExtResource( 8 )]
 
 position = Vector2( -699.6, 70.8345 )
 type = ""
 
-[node name="Barrel12" parent="Walls" index="11" instance=ExtResource( 7 )]
+[node name="Barrel12" parent="Walls" index="11" instance=ExtResource( 8 )]
 
 position = Vector2( -682.7, 74.5745 )
 type = ""
 
-[node name="Barrel13" parent="Walls" index="12" instance=ExtResource( 7 )]
+[node name="Barrel13" parent="Walls" index="12" instance=ExtResource( 8 )]
 
 position = Vector2( -441.393, 187.446 )
 type = ""
 
-[node name="Barrel14" parent="Walls" index="13" instance=ExtResource( 7 )]
+[node name="Barrel14" parent="Walls" index="13" instance=ExtResource( 8 )]
 
 position = Vector2( -424.902, 186.012 )
 type = ""
 
-[node name="Barrel15" parent="Walls" index="14" instance=ExtResource( 7 )]
+[node name="Barrel15" parent="Walls" index="14" instance=ExtResource( 8 )]
 
 position = Vector2( -392.639, 107.862 )
 type = "photop3"
 
-[node name="Barrel16" parent="Walls" index="15" instance=ExtResource( 7 )]
+[node name="Barrel16" parent="Walls" index="15" instance=ExtResource( 8 )]
 
 position = Vector2( -391.922, 28.2788 )
 type = "photop4"
 
-[node name="Barrel17" parent="Walls" index="16" instance=ExtResource( 7 )]
+[node name="Barrel17" parent="Walls" index="16" instance=ExtResource( 8 )]
 
 position = Vector2( -295.489, 43.3352 )
 type = ""
 
-[node name="Barrel20" parent="Walls" index="17" instance=ExtResource( 7 )]
+[node name="Barrel20" parent="Walls" index="17" instance=ExtResource( 8 )]
 
 position = Vector2( -342.817, 165.578 )
 type = ""
 
-[node name="Barrel21" parent="Walls" index="18" instance=ExtResource( 7 )]
+[node name="Barrel21" parent="Walls" index="18" instance=ExtResource( 8 )]
 
 position = Vector2( -266.474, 165.102 )
 type = ""
 
-[node name="Barrel18" parent="Walls" index="19" instance=ExtResource( 7 )]
+[node name="Barrel18" parent="Walls" index="19" instance=ExtResource( 8 )]
 
 position = Vector2( -296.206, 27.5618 )
 type = ""
 
-[node name="L3-puz-1" parent="Walls" index="20" instance=ExtResource( 7 )]
+[node name="L3-puz-1" parent="Walls" index="20" instance=ExtResource( 8 )]
 
 position = Vector2( 11.8685, -435.013 )
 type = "L3-puz-1"
 
-[node name="L3-puz-2" parent="Walls" index="21" instance=ExtResource( 7 )]
+[node name="L3-puz-2" parent="Walls" index="21" instance=ExtResource( 8 )]
 
 position = Vector2( 137.883, -386.83 )
 type = "L3-puz-2"
 
-[node name="L3-puz-3" parent="Walls" index="22" instance=ExtResource( 7 )]
+[node name="L3-puz-3" parent="Walls" index="22" instance=ExtResource( 8 )]
 
 position = Vector2( 10.9419, -322.897 )
 type = "L3-puz-3"
 
-[node name="crate" parent="Walls" index="23" instance=ExtResource( 8 )]
+[node name="crate" parent="Walls" index="23" instance=ExtResource( 9 )]
 
 position = Vector2( -294.966, 106.464 )
 type = ""
 
-[node name="crate2" parent="Walls" index="24" instance=ExtResource( 8 )]
+[node name="crate2" parent="Walls" index="24" instance=ExtResource( 9 )]
 
 position = Vector2( -310.771, 106.179 )
 type = ""
 
-[node name="crate3" parent="Walls" index="25" instance=ExtResource( 8 )]
+[node name="crate3" parent="Walls" index="25" instance=ExtResource( 9 )]
 
 position = Vector2( -326.72, 104.186 )
 type = ""
 
-[node name="crate19" parent="Walls" index="26" instance=ExtResource( 8 )]
+[node name="crate19" parent="Walls" index="26" instance=ExtResource( 9 )]
 
 position = Vector2( -344.557, 224.288 )
 type = ""
 
-[node name="crate20" parent="Walls" index="27" instance=ExtResource( 8 )]
+[node name="crate20" parent="Walls" index="27" instance=ExtResource( 9 )]
 
 position = Vector2( -343.843, 213.586 )
 type = ""
 
-[node name="crate21" parent="Walls" index="28" instance=ExtResource( 8 )]
+[node name="crate21" parent="Walls" index="28" instance=ExtResource( 9 )]
 
 position = Vector2( -330.525, 222.148 )
 type = ""
 
-[node name="crate33" parent="Walls" index="29" instance=ExtResource( 8 )]
+[node name="crate33" parent="Walls" index="29" instance=ExtResource( 9 )]
 
 position = Vector2( -287.003, 227.618 )
 type = ""
 
-[node name="crate36" parent="Walls" index="30" instance=ExtResource( 8 )]
+[node name="crate36" parent="Walls" index="30" instance=ExtResource( 9 )]
 
 position = Vector2( -273.684, 220.958 )
 type = ""
 
-[node name="crate37" parent="Walls" index="31" instance=ExtResource( 8 )]
+[node name="crate37" parent="Walls" index="31" instance=ExtResource( 9 )]
 
 position = Vector2( -265.598, 210.494 )
 type = ""
 
-[node name="crate38" parent="Walls" index="32" instance=ExtResource( 8 )]
+[node name="crate38" parent="Walls" index="32" instance=ExtResource( 9 )]
 
 position = Vector2( -263.934, 227.142 )
 type = ""
 
-[node name="crate4" parent="Walls" index="33" instance=ExtResource( 8 )]
+[node name="crate4" parent="Walls" index="33" instance=ExtResource( 9 )]
 
 position = Vector2( -313.017, 42.2587 )
 type = ""
 
-[node name="crate5" parent="Walls" index="34" instance=ExtResource( 8 )]
+[node name="crate5" parent="Walls" index="34" instance=ExtResource( 9 )]
 
 position = Vector2( -311.023, 26.5952 )
 type = ""
 
-[node name="crate6" parent="Walls" index="35" instance=ExtResource( 8 )]
+[node name="crate6" parent="Walls" index="35" instance=ExtResource( 9 )]
 
 position = Vector2( -326.687, 26.88 )
 type = ""
 
-[node name="crate7" parent="Walls" index="36" instance=ExtResource( 8 )]
+[node name="crate7" parent="Walls" index="36" instance=ExtResource( 9 )]
 
 position = Vector2( -390.907, 42.5435 )
 type = ""
 
-[node name="crate8" parent="Walls" index="37" instance=ExtResource( 8 )]
+[node name="crate8" parent="Walls" index="37" instance=ExtResource( 9 )]
 
 position = Vector2( -422.665, 169.93 )
 type = ""
 
-[node name="crate9" parent="Walls" index="38" instance=ExtResource( 8 )]
+[node name="crate9" parent="Walls" index="38" instance=ExtResource( 9 )]
 
 position = Vector2( -439.291, 170.213 )
 type = ""
 
-[node name="crate10" parent="Walls" index="39" instance=ExtResource( 8 )]
+[node name="crate10" parent="Walls" index="39" instance=ExtResource( 9 )]
 
 position = Vector2( -423.893, 153.965 )
 type = ""
 
-[node name="crate11" parent="Walls" index="40" instance=ExtResource( 8 )]
+[node name="crate11" parent="Walls" index="40" instance=ExtResource( 9 )]
 
 position = Vector2( -487.66, 89.738 )
 type = ""
 
-[node name="crate12" parent="Walls" index="41" instance=ExtResource( 8 )]
+[node name="crate12" parent="Walls" index="41" instance=ExtResource( 9 )]
 
 position = Vector2( -487.66, 73.7325 )
 type = "photop2"
 
-[node name="crate13" parent="Walls" index="42" instance=ExtResource( 8 )]
+[node name="crate13" parent="Walls" index="42" instance=ExtResource( 9 )]
 
 position = Vector2( -567.664, 153.737 )
 type = ""
 
-[node name="crate14" parent="Walls" index="43" instance=ExtResource( 8 )]
+[node name="crate14" parent="Walls" index="43" instance=ExtResource( 9 )]
 
 position = Vector2( -567.372, 138.554 )
 type = ""
 
-[node name="crate15" parent="Walls" index="44" instance=ExtResource( 8 )]
+[node name="crate15" parent="Walls" index="44" instance=ExtResource( 9 )]
 
 position = Vector2( -583.14, 140.89 )
 type = ""
 
-[node name="crate16" parent="Walls" index="45" instance=ExtResource( 8 )]
+[node name="crate16" parent="Walls" index="45" instance=ExtResource( 9 )]
 
 position = Vector2( -647.04, 170.868 )
 type = "photop1"
 
-[node name="crate17" parent="Walls" index="46" instance=ExtResource( 8 )]
+[node name="crate17" parent="Walls" index="46" instance=ExtResource( 9 )]
 
 position = Vector2( -647.987, 186.014 )
 type = ""
 
-[node name="crate18" parent="Walls" index="47" instance=ExtResource( 8 )]
+[node name="crate18" parent="Walls" index="47" instance=ExtResource( 9 )]
 
 position = Vector2( -631.105, 186.33 )
 type = ""
 
-[node name="crate22" parent="Walls" index="48" instance=ExtResource( 8 )]
+[node name="crate22" parent="Walls" index="48" instance=ExtResource( 9 )]
 
 position = Vector2( -680.234, 90.2374 )
 type = ""
 
-[node name="crate23" parent="Walls" index="49" instance=ExtResource( 8 )]
+[node name="crate23" parent="Walls" index="49" instance=ExtResource( 9 )]
 
 position = Vector2( -710.498, 89.5935 )
 type = ""
 
-[node name="crate24" parent="Walls" index="50" instance=ExtResource( 8 )]
+[node name="crate24" parent="Walls" index="50" instance=ExtResource( 9 )]
 
 position = Vector2( -696.383, 85.3197 )
 type = "clue1-1"
 
-[node name="crate25" parent="Walls" index="51" instance=ExtResource( 8 )]
+[node name="crate25" parent="Walls" index="51" instance=ExtResource( 9 )]
 
 position = Vector2( -775.104, 58.4709 )
 type = ""
 
-[node name="crate26" parent="Walls" index="52" instance=ExtResource( 8 )]
+[node name="crate26" parent="Walls" index="52" instance=ExtResource( 9 )]
 
 position = Vector2( -776.392, 42.5877 )
 type = ""
 
-[node name="crate27" parent="Walls" index="53" instance=ExtResource( 8 )]
+[node name="crate27" parent="Walls" index="53" instance=ExtResource( 9 )]
 
 position = Vector2( -680.878, 26.9191 )
 type = ""
 
-[node name="crate28" parent="Walls" index="54" instance=ExtResource( 8 )]
+[node name="crate28" parent="Walls" index="54" instance=ExtResource( 9 )]
 
 position = Vector2( -614.555, 11.2506 )
 type = ""
 
-[node name="crate29" parent="Walls" index="55" instance=ExtResource( 8 )]
+[node name="crate29" parent="Walls" index="55" instance=ExtResource( 9 )]
 
 position = Vector2( -630.867, 27.1338 )
 type = ""
 
-[node name="crate30" parent="Walls" index="56" instance=ExtResource( 8 )]
+[node name="crate30" parent="Walls" index="56" instance=ExtResource( 9 )]
 
 position = Vector2( -550.208, 75.5292 )
 type = ""
 
-[node name="crate31" parent="Walls" index="57" instance=ExtResource( 8 )]
+[node name="crate31" parent="Walls" index="57" instance=ExtResource( 9 )]
 
 position = Vector2( -519.379, 29.6432 )
 type = ""
 
-[node name="crate32" parent="Walls" index="58" instance=ExtResource( 8 )]
+[node name="crate32" parent="Walls" index="58" instance=ExtResource( 9 )]
 
 position = Vector2( -552.001, 88.4347 )
 type = "clue1-2"
 
-[node name="crate34" parent="Walls" index="59" instance=ExtResource( 8 )]
+[node name="crate34" parent="Walls" index="59" instance=ExtResource( 9 )]
 
 position = Vector2( -545.19, 99.5477 )
 type = ""
 
-[node name="crate35" parent="Walls" index="60" instance=ExtResource( 8 )]
+[node name="crate35" parent="Walls" index="60" instance=ExtResource( 9 )]
 
 position = Vector2( -537.661, 82.6989 )
 type = ""
 
-[node name="crate39" parent="Walls" index="61" instance=ExtResource( 8 )]
+[node name="crate39" parent="Walls" index="61" instance=ExtResource( 9 )]
 
 position = Vector2( -298.673, 90.6212 )
 type = ""
 
-[node name="crate40" parent="Walls" index="62" instance=ExtResource( 8 )]
+[node name="crate40" parent="Walls" index="62" instance=ExtResource( 9 )]
 
 position = Vector2( -304.82, 194.507 )
 type = "clue1-3"
 
-[node name="Player" parent="Walls" index="63" instance=ExtResource( 9 )]
+[node name="Player" parent="Walls" index="63" instance=ExtResource( 10 )]
 
-position = Vector2( -527.767, 236.452 )
+position = Vector2( -2183.19, -49.3278 )
 scale = Vector2( 0.5, 0.5 )
 _sections_unfolded = [ "Collision", "Pickable", "Transform", "collision" ]
 
@@ -715,52 +729,52 @@ texture = SubResource( 3 )
 centered = false
 _sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 
-[node name="DoorL1-1" parent="Walls" index="65" instance=ExtResource( 10 )]
+[node name="DoorL1-1" parent="Walls" index="65" instance=ExtResource( 11 )]
 
 position = Vector2( -536, 208 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="DoorL1-2" parent="Walls" index="66" instance=ExtResource( 10 )]
+[node name="DoorL1-2" parent="Walls" index="66" instance=ExtResource( 11 )]
 
 position = Vector2( -520, 208 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="DoorL2-1" parent="Walls" index="67" instance=ExtResource( 10 )]
+[node name="DoorL2-1" parent="Walls" index="67" instance=ExtResource( 11 )]
 
 position = Vector2( -536, 0 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="DoorL2-puzzle" parent="Walls" index="68" instance=ExtResource( 10 )]
+[node name="DoorL2-puzzle" parent="Walls" index="68" instance=ExtResource( 11 )]
 
 position = Vector2( -296, -336 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
-[node name="DoorL3-1" parent="Walls" index="69" instance=ExtResource( 11 )]
+[node name="DoorL3-1" parent="Walls" index="69" instance=ExtResource( 12 )]
 
 position = Vector2( -77.5, -304 )
 _sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
 
-[node name="DoorL3-2" parent="Walls" index="70" instance=ExtResource( 11 )]
+[node name="DoorL3-2" parent="Walls" index="70" instance=ExtResource( 12 )]
 
 position = Vector2( -77.5, -320 )
 _sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
 
-[node name="DoorL3-3" parent="Walls" index="71" instance=ExtResource( 11 )]
+[node name="DoorL3-3" parent="Walls" index="71" instance=ExtResource( 12 )]
 
 position = Vector2( -77.5, -336 )
 _sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
 
-[node name="DoorL3-locked1-1" parent="Walls" index="72" instance=ExtResource( 11 )]
+[node name="DoorL3-locked1-1" parent="Walls" index="72" instance=ExtResource( 12 )]
 
 position = Vector2( 320.5, -560 )
 _sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
 
-[node name="DoorL3-locked1-2" parent="Walls" index="73" instance=ExtResource( 11 )]
+[node name="DoorL3-locked1-2" parent="Walls" index="73" instance=ExtResource( 12 )]
 
 position = Vector2( 320.5, -576 )
 _sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
 
-[node name="DoorL3-locked2-1" parent="Walls" index="74" instance=ExtResource( 10 )]
+[node name="DoorL3-locked2-1" parent="Walls" index="74" instance=ExtResource( 11 )]
 
 position = Vector2( 8, -608 )
 _sections_unfolded = [ "Offset", "Transform" ]
@@ -769,10 +783,10 @@ _sections_unfolded = [ "Offset", "Transform" ]
 
 position = Vector2( -2183.92, -83.4036 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
-[node name="UI" type="CanvasLayer" parent="." index="7"]
+[node name="UI" type="CanvasLayer" parent="." index="8"]
 
 editor/display_folded = true
 layer = 1
@@ -788,7 +802,7 @@ offset = Vector2( 0, 0 )
 rotation = 0.0
 scale = Vector2( 1, 1 )
 transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-script = ExtResource( 13 )
+script = ExtResource( 14 )
 
 [node name="Tween" type="Tween" parent="UI/Title" index="0"]
 
@@ -811,7 +825,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 14 )
+texture = ExtResource( 15 )
 expand = true
 stretch_mode = 7
 _sections_unfolded = [ "Margin" ]
@@ -849,7 +863,7 @@ offset = Vector2( 0, 0 )
 rotation = 0.0
 scale = Vector2( 1, 1 )
 transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-script = ExtResource( 13 )
+script = ExtResource( 14 )
 
 [node name="Tween" type="Tween" parent="UI/Instructions" index="0"]
 
@@ -872,7 +886,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 15 )
+texture = ExtResource( 16 )
 expand = true
 stretch_mode = 7
 
@@ -902,19 +916,40 @@ flat = false
 align = 1
 _sections_unfolded = [ "Margin", "custom_fonts" ]
 
-[node name="Message" parent="UI" index="2" instance=ExtResource( 16 )]
+[node name="Message" parent="UI" index="2" instance=ExtResource( 17 )]
 
 layer = 2
 offset = Vector2( 0, 200 )
 transform = Transform2D( 1, 0, 0, 1, 0, 200 )
 
-[node name="phone" parent="UI" index="3" instance=ExtResource( 17 )]
+[node name="phone" parent="UI" index="3" instance=ExtResource( 18 )]
 
 shake = false
 
-[node name="Areas" type="Node" parent="." index="8"]
+[node name="Areas" type="Node" parent="." index="9"]
 
-[node name="L1" type="Node" parent="Areas" index="0"]
+[node name="L0" type="Node" parent="Areas" index="0"]
+
+[node name="L0_teleport" type="Area2D" parent="Areas/L0" index="0"]
+
+position = Vector2( -2135.23, -97.2922 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+monitoring = false
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L0/L0_teleport" index="0"]
+
+position = Vector2( -0.736084, 2.2083 )
+shape = SubResource( 35 )
+
+[node name="L1" type="Node" parent="Areas" index="1"]
+
+editor/display_folded = true
 
 [node name="enteredL1" type="Area2D" parent="Areas/L1" index="0"]
 
@@ -933,7 +968,9 @@ audio_bus_name = "Master"
 position = Vector2( -0.736084, 2.2083 )
 shape = SubResource( 4 )
 
-[node name="L2" type="Node" parent="Areas" index="1"]
+[node name="L2" type="Node" parent="Areas" index="2"]
+
+editor/display_folded = true
 
 [node name="enteredL2" type="Area2D" parent="Areas/L2" index="0"]
 
@@ -1402,7 +1439,9 @@ position = Vector2( 0.281452, -12.3491 )
 scale = Vector2( 1.32442, 3.52045 )
 shape = SubResource( 28 )
 
-[node name="L3" type="Node" parent="Areas" index="2"]
+[node name="L3" type="Node" parent="Areas" index="3"]
+
+editor/display_folded = true
 
 [node name="enteredL3" type="Area2D" parent="Areas/L3" index="0"]
 
@@ -1552,7 +1591,7 @@ audio_bus_name = "Master"
 position = Vector2( -4.60425, 28.1164 )
 shape = SubResource( 34 )
 
-[node name="Tween" type="Tween" parent="." index="9"]
+[node name="Tween" type="Tween" parent="." index="10"]
 
 repeat = false
 playback_process_mode = 1
@@ -1568,5 +1607,7 @@ playback/speed = 1.0
 [connection signal="tween_completed" from="UI/Instructions/Tween" to="UI/Instructions" method="_on_Tween_tween_completed"]
 
 [connection signal="pressed" from="UI/Instructions/Instructions/Button" to="UI/Instructions" method="_on_Button_pressed"]
+
+[connection signal="tween_completed" from="Tween" to="." method="_on_Tween_tween_completed"]
 
 
