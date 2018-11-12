@@ -931,7 +931,7 @@ shake = false
 
 [node name="L0_teleport" type="Area2D" parent="Areas/L0" index="0"]
 
-position = Vector2( -2135.23, -105.292 )
+position = Vector2( -2135.23, -101.292 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0

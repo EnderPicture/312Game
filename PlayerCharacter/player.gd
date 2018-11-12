@@ -197,7 +197,6 @@ func _physics_process(delta):
 					world.message.show_text("There’s a baby crib in here. My baby crib. I’d put it in storage when Kyle grew out of it. The kidnapper stole it and brought it all the way here- but why? Did he want me to find it? I shudder, not wanting to think about it.")
 					world.l1_clue += 1
 				elif parrent_collider.type == "" :
-					world.sound.play()
 					world.message.show_text("There’s nothing in here. I kick it out of the way in frustration.")
 				
 				elif "L3-puz" in parrent_collider.type :
