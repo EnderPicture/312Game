@@ -270,7 +270,7 @@ extents = Vector2( 7.87115, 5 )
 custom_solver_bias = 0.0
 extents = Vector2( 35.1382, 15.2541 )
 
-[node name="World" type="Node"]
+[node name="World" type="Node" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Pause" ]
@@ -291,7 +291,7 @@ bus = "Master"
 [node name="InteractionSound" type="AudioStreamPlayer" parent="." index="2"]
 
 stream = ExtResource( 3 )
-volume_db = -20.0
+volume_db = 0.0
 pitch_scale = 1.0
 autoplay = false
 mix_target = 0
@@ -927,13 +927,11 @@ shake = false
 
 [node name="Areas" type="Node" parent="." index="9"]
 
-editor/display_folded = true
-
 [node name="L0" type="Node" parent="Areas" index="0"]
 
 [node name="L0_teleport" type="Area2D" parent="Areas/L0" index="0"]
 
-position = Vector2( -2135.23, -97.2922 )
+position = Vector2( -2135.23, -105.292 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
