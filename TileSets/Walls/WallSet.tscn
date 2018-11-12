@@ -131,13 +131,13 @@ _sections_unfolded = [ "Resource" ]
 [sub_resource type="RectangleShape2D" id=9]
 
 custom_solver_bias = 0.0
-extents = Vector2( 24, 10 )
+extents = Vector2( 24, 13 )
 
 [sub_resource type="OccluderPolygon2D" id=60]
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -23.5, 15, -23.5, -4.9, 24.4, -4.9, 24.4, 15 )
+polygon = PoolVector2Array( -23.5, -1, -23.5, -20.9, 24.4, -20.9, 24.4, -1 )
 _sections_unfolded = [ "Resource" ]
 
 [sub_resource type="RectangleShape2D" id=46]
@@ -575,6 +575,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 44.7279, 201.492 )
 texture = ExtResource( 9 )
+offset = Vector2( 0, -16 )
 _sections_unfolded = [ "Offset" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="DinnerTable" index="0"]
@@ -589,7 +590,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DinnerTable/StaticBody2D" index="0"]
 
-position = Vector2( 0.382053, 5.03589 )
+position = Vector2( 0.382053, -13.6 )
 shape = SubResource( 9 )
 _sections_unfolded = [ "Transform" ]
 
