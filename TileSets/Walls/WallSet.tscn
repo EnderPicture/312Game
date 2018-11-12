@@ -51,308 +51,308 @@
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[sub_resource type="OccluderPolygon2D" id=54]
+[sub_resource type="OccluderPolygon2D" id=2]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -8.7, 9.8, -8.7, -10, 8.7, -10, 8.7, 9.8 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
 extents = Vector2( 16, 23.5 )
 
-[sub_resource type="OccluderPolygon2D" id=55]
+[sub_resource type="OccluderPolygon2D" id=4]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -15.5, 23.5, -15.5, -18, 16.4, -18, 16.4, 23.5 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=3]
-
-custom_solver_bias = 0.0
-extents = Vector2( 10, 10 )
-
-[sub_resource type="RectangleShape2D" id=4]
-
-custom_solver_bias = 0.0
-extents = Vector2( 8.04342, 10 )
-
 [sub_resource type="RectangleShape2D" id=5]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[sub_resource type="OccluderPolygon2D" id=56]
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.04342, 10 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="OccluderPolygon2D" id=8]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -8, 8, -8, -8, 7.8, -8, 7.8, 8 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=6]
+[sub_resource type="RectangleShape2D" id=9]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[sub_resource type="OccluderPolygon2D" id=57]
+[sub_resource type="OccluderPolygon2D" id=10]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -16.4, 7.5, -16.3, -8, 15, -8, 15.2, 7.5 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=11]
 
 custom_solver_bias = 0.0
 extents = Vector2( 23.5927, 7.19516 )
 
-[sub_resource type="OccluderPolygon2D" id=58]
+[sub_resource type="OccluderPolygon2D" id=12]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -23, 10, -23, -4.3, 23.8, -4.3, 23.8, 10 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=8]
+[sub_resource type="RectangleShape2D" id=13]
 
 custom_solver_bias = 0.0
 extents = Vector2( 8.17844, 8.11051 )
 
-[sub_resource type="OccluderPolygon2D" id=59]
+[sub_resource type="OccluderPolygon2D" id=14]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -8.5, 16.4, -8.5, -15.4, 7.7, -15.4, 7.7, 16.4 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=15]
 
 custom_solver_bias = 0.0
 extents = Vector2( 24, 13 )
 
-[sub_resource type="OccluderPolygon2D" id=60]
+[sub_resource type="OccluderPolygon2D" id=16]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -23.5, -1, -23.5, -20.9, 24.4, -20.9, 24.4, -1 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=46]
+[sub_resource type="RectangleShape2D" id=17]
 
 custom_solver_bias = 0.0
 extents = Vector2( 8.09933, 10 )
 
-[sub_resource type="OccluderPolygon2D" id=61]
+[sub_resource type="OccluderPolygon2D" id=18]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -8.1, 3.8, -8.1, -11, 8.1, -11, 8.1, 3.8 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=10]
+[sub_resource type="RectangleShape2D" id=19]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[sub_resource type="OccluderPolygon2D" id=62]
+[sub_resource type="OccluderPolygon2D" id=20]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -8.1, 3.8, -8.1, -11, 8.1, -11, 8.1, 3.8 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=11]
+[sub_resource type="RectangleShape2D" id=21]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="RectangleShape2D" id=22]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[sub_resource type="RectangleShape2D" id=13]
+[sub_resource type="RectangleShape2D" id=23]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[sub_resource type="RectangleShape2D" id=14]
+[sub_resource type="RectangleShape2D" id=24]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[sub_resource type="OccluderPolygon2D" id=63]
+[sub_resource type="OccluderPolygon2D" id=25]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -8.4, 4, -8.4, -17, 8, -17, 8, 4 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=15]
+[sub_resource type="RectangleShape2D" id=26]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[sub_resource type="OccluderPolygon2D" id=64]
+[sub_resource type="OccluderPolygon2D" id=27]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -7.5, 4.6, -7.5, -24.7, 7.1, -24.7, 7.1, 4.6 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=16]
+[sub_resource type="RectangleShape2D" id=28]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[sub_resource type="RectangleShape2D" id=17]
+[sub_resource type="RectangleShape2D" id=29]
 
 custom_solver_bias = 0.0
 extents = Vector2( 7.8812, 10 )
 
-[sub_resource type="RectangleShape2D" id=18]
+[sub_resource type="RectangleShape2D" id=30]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 6.23597 )
 
-[sub_resource type="RectangleShape2D" id=19]
+[sub_resource type="RectangleShape2D" id=31]
 
 custom_solver_bias = 0.0
 extents = Vector2( 8, 8 )
 
-[sub_resource type="OccluderPolygon2D" id=20]
+[sub_resource type="OccluderPolygon2D" id=32]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -8, 0, -8, -16, 8, -16, 8, 0 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=21]
+[sub_resource type="RectangleShape2D" id=33]
 
 custom_solver_bias = 0.0
 extents = Vector2( 8.00525, 8.0481 )
 
-[sub_resource type="OccluderPolygon2D" id=47]
+[sub_resource type="OccluderPolygon2D" id=34]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -8, 8, -8, -8, 8, -8, 8, 8 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=22]
+[sub_resource type="RectangleShape2D" id=35]
 
 custom_solver_bias = 0.0
 extents = Vector2( 8.07582, 7.62323 )
 
-[sub_resource type="OccluderPolygon2D" id=48]
+[sub_resource type="OccluderPolygon2D" id=36]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -8, 8, -8, -8, 8, -8, 8, 8 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=23]
+[sub_resource type="RectangleShape2D" id=37]
 
 custom_solver_bias = 0.0
 extents = Vector2( 8.62304, 10 )
 
-[sub_resource type="RectangleShape2D" id=24]
+[sub_resource type="RectangleShape2D" id=38]
 
 custom_solver_bias = 0.0
 extents = Vector2( 12.0408, 8.01176 )
 
-[sub_resource type="OccluderPolygon2D" id=49]
+[sub_resource type="OccluderPolygon2D" id=39]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -12, 8, -12, -8, 12, -8, 12, 8 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=25]
+[sub_resource type="RectangleShape2D" id=40]
 
 custom_solver_bias = 0.0
 extents = Vector2( 7.95251, 10 )
 
-[sub_resource type="OccluderPolygon2D" id=50]
+[sub_resource type="OccluderPolygon2D" id=41]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -8, -6, -8, -33, 8, -33, 8, -6 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=26]
+[sub_resource type="RectangleShape2D" id=42]
 
 custom_solver_bias = 0.0
 extents = Vector2( 8.05984, 10 )
 
-[sub_resource type="OccluderPolygon2D" id=51]
+[sub_resource type="OccluderPolygon2D" id=43]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -8, 1.5, -8, -15.5, 8, -15.5, 8, 1.5 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=27]
+[sub_resource type="RectangleShape2D" id=44]
 
 custom_solver_bias = 0.0
 extents = Vector2( 8, 8 )
 
-[sub_resource type="OccluderPolygon2D" id=52]
+[sub_resource type="OccluderPolygon2D" id=45]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -8, -1, -8, -17, 8, -17, 8, -1 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=30]
+[sub_resource type="RectangleShape2D" id=46]
 
 custom_solver_bias = 0.0
 extents = Vector2( 4.25664, 5.94293 )
 
-[sub_resource type="OccluderPolygon2D" id=53]
+[sub_resource type="OccluderPolygon2D" id=47]
 
 closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -2, 6, -2, -1, 6, -1, 6, 6 )
 _sections_unfolded = [ "Resource" ]
 
-[sub_resource type="RectangleShape2D" id=31]
+[sub_resource type="RectangleShape2D" id=48]
 
 custom_solver_bias = 0.0
 extents = Vector2( 8, 6.5 )
 
-[sub_resource type="OccluderPolygon2D" id=32]
+[sub_resource type="OccluderPolygon2D" id=49]
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -12.3487, 3.4736, -12.2976, -4.82434, 3.01645, -4.72226, 3.01645, 3.57568 )
+polygon = PoolVector2Array( -11.3487, 3.4736, -11.2976, -4.82434, 2.01645, -4.72226, 2.01645, 3.57568 )
 
-[sub_resource type="RectangleShape2D" id=33]
+[sub_resource type="RectangleShape2D" id=50]
 
 custom_solver_bias = 0.0
 extents = Vector2( 8, 6.5 )
 
-[sub_resource type="OccluderPolygon2D" id=34]
+[sub_resource type="OccluderPolygon2D" id=51]
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -15.2956, -4.34152, -15.1259, -11.0724, 0.145714, -11.1289, 0.202278, -4.28497 )
+polygon = PoolVector2Array( -14.2956, -4.34152, -14.1259, -11.0724, -1.14571, -11.1289, -1.20228, -4.28497 )
 
-[sub_resource type="RectangleShape2D" id=35]
+[sub_resource type="RectangleShape2D" id=52]
 
 custom_solver_bias = 0.0
 extents = Vector2( 8, 6.5 )
 
-[sub_resource type="OccluderPolygon2D" id=36]
+[sub_resource type="OccluderPolygon2D" id=53]
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -13.8757, -11.4928, -14.208, -17.6989, 1.31026, -17.8521, 1.33937, -11.5494 )
+polygon = PoolVector2Array( -13.6757, -11.4928, -13.208, -17.6989, 0.31026, -17.8521, 0.33937, -11.5494 )
 
-[node name="Node" type="Node"]
+[node name="Node" type="Node" index="0"]
 
 [node name="HotTop" type="Sprite" parent="." index="0"]
 
@@ -377,7 +377,7 @@ shape = SubResource( 1 )
 
 [node name="LightOccluder2D11" type="LightOccluder2D" parent="HotTop" index="1"]
 
-occluder = SubResource( 54 )
+occluder = SubResource( 2 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -400,12 +400,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BigBed/StaticBody2D" index="0"]
 
 position = Vector2( 0.440613, 0.0245514 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D12" type="LightOccluder2D" parent="BigBed" index="1"]
 
-occluder = SubResource( 55 )
+occluder = SubResource( 4 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -428,11 +428,11 @@ bounce = 0.0
 
 position = Vector2( 0.0608139, -0.140327 )
 scale = Vector2( 0.820796, 1 )
-shape = SubResource( 3 )
+shape = SubResource( 5 )
 
 [node name="LightOccluder2D12" type="LightOccluder2D" parent="Cabinet1" index="1"]
 
-occluder = SubResource( 54 )
+occluder = SubResource( 2 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -454,12 +454,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cabinet2/StaticBody2D" index="0"]
 
 position = Vector2( 0.146709, -0.0900192 )
-shape = SubResource( 4 )
+shape = SubResource( 6 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D13" type="LightOccluder2D" parent="Cabinet2" index="1"]
 
-occluder = SubResource( 54 )
+occluder = SubResource( 2 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -482,11 +482,11 @@ bounce = 0.0
 
 position = Vector2( -0.231972, 0.115979 )
 scale = Vector2( 0.811874, 0.825256 )
-shape = SubResource( 5 )
+shape = SubResource( 7 )
 
 [node name="LightOccluder2D14" type="LightOccluder2D" parent="CoffeeTable" index="1"]
 
-occluder = SubResource( 56 )
+occluder = SubResource( 8 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -509,11 +509,11 @@ bounce = 0.0
 
 position = Vector2( -0.579909, -0.637903 )
 scale = Vector2( 1.58806, 0.820795 )
-shape = SubResource( 6 )
+shape = SubResource( 9 )
 
 [node name="LightOccluder2D15" type="LightOccluder2D" parent="Couch" index="1"]
 
-occluder = SubResource( 57 )
+occluder = SubResource( 10 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -535,12 +535,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Island/StaticBody2D" index="0"]
 
 position = Vector2( 0.272511, 2.78905 )
-shape = SubResource( 7 )
+shape = SubResource( 11 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D16" type="LightOccluder2D" parent="Island" index="1"]
 
-occluder = SubResource( 58 )
+occluder = SubResource( 12 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -563,11 +563,11 @@ bounce = 0.0
 
 position = Vector2( -0.436371, 0.522272 )
 scale = Vector2( 1, 1.96723 )
-shape = SubResource( 8 )
+shape = SubResource( 13 )
 
 [node name="LightOccluder2D17" type="LightOccluder2D" parent="LittleBed" index="1"]
 
-occluder = SubResource( 59 )
+occluder = SubResource( 14 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -591,12 +591,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DinnerTable/StaticBody2D" index="0"]
 
 position = Vector2( 0.382053, -13.6 )
-shape = SubResource( 9 )
+shape = SubResource( 15 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D18" type="LightOccluder2D" parent="DinnerTable" index="1"]
 
-occluder = SubResource( 60 )
+occluder = SubResource( 16 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -621,11 +621,11 @@ bounce = 0.0
 
 position = Vector2( 0, -3.43655 )
 scale = Vector2( 1, 0.73565 )
-shape = SubResource( 46 )
+shape = SubResource( 17 )
 
 [node name="LightOccluder2D19" type="LightOccluder2D" parent="Door" index="1"]
 
-occluder = SubResource( 61 )
+occluder = SubResource( 18 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -650,11 +650,11 @@ bounce = 0.0
 
 position = Vector2( -0.000959888, -5.13672 )
 scale = Vector2( 0.804961, 1.04763 )
-shape = SubResource( 10 )
+shape = SubResource( 19 )
 
 [node name="LightOccluder2D20" type="LightOccluder2D" parent="Dresser" index="1"]
 
-occluder = SubResource( 62 )
+occluder = SubResource( 20 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -676,7 +676,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StorageShelf1/StaticBody2D" index="0"]
 
 scale = Vector2( 0.828635, 0.822717 )
-shape = SubResource( 11 )
+shape = SubResource( 21 )
 
 [node name="StorageShelf2" type="Sprite" parent="." index="12"]
 
@@ -697,7 +697,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StorageShelf2/StaticBody2D" index="0"]
 
 scale = Vector2( 0.819758, 0.828637 )
-shape = SubResource( 12 )
+shape = SubResource( 22 )
 
 [node name="StorageShelf3" type="Sprite" parent="." index="13"]
 
@@ -718,7 +718,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StorageShelf3/StaticBody2D" index="0"]
 
 scale = Vector2( 0.875987, 0.846393 )
-shape = SubResource( 13 )
+shape = SubResource( 23 )
 
 [node name="Stove" type="Sprite" parent="." index="14"]
 
@@ -742,11 +742,11 @@ bounce = 0.0
 
 position = Vector2( -0.153881, -11.923 )
 scale = Vector2( 0.822718, 1.60104 )
-shape = SubResource( 14 )
+shape = SubResource( 24 )
 
 [node name="LightOccluder2D15" type="LightOccluder2D" parent="Stove" index="1"]
 
-occluder = SubResource( 63 )
+occluder = SubResource( 25 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -772,12 +772,12 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( -0.192375, -10.0769 )
 scale = Vector2( 0.730975, 1.47083 )
-shape = SubResource( 15 )
+shape = SubResource( 26 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D21" type="LightOccluder2D" parent="Fridge" index="1"]
 
-occluder = SubResource( 64 )
+occluder = SubResource( 27 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -803,7 +803,7 @@ bounce = 0.0
 
 position = Vector2( 99.7147, -1.00157 )
 scale = Vector2( 2.84822, 2.86542 )
-shape = SubResource( 16 )
+shape = SubResource( 28 )
 
 [node name="Sink" type="Sprite" parent="." index="17"]
 
@@ -825,12 +825,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sink/StaticBody2D" index="0"]
 
 position = Vector2( 0.147537, -1.44287 )
-shape = SubResource( 17 )
+shape = SubResource( 29 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D14" type="LightOccluder2D" parent="Sink" index="1"]
 
-occluder = SubResource( 54 )
+occluder = SubResource( 2 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -855,7 +855,7 @@ bounce = 0.0
 
 position = Vector2( 0.00814056, -9.1579 )
 scale = Vector2( 0.819557, 1.59814 )
-shape = SubResource( 18 )
+shape = SubResource( 30 )
 
 [node name="Wall" type="Sprite" parent="." index="19"]
 
@@ -880,12 +880,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Wall" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -922,12 +922,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D2" type="LightOccluder2D" parent="Wall2" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -953,12 +953,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall3/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall3" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -985,12 +985,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall4/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D8" type="LightOccluder2D" parent="Wall4" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1017,12 +1017,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall5/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D7" type="LightOccluder2D" parent="Wall5" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1049,12 +1049,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall7/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D6" type="LightOccluder2D" parent="Wall7" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1080,12 +1080,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall8/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D5" type="LightOccluder2D" parent="Wall8" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1111,12 +1111,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall9/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D4" type="LightOccluder2D" parent="Wall9" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1143,12 +1143,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall10/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall10" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1175,12 +1175,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall11/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D8" type="LightOccluder2D" parent="Wall11" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1207,12 +1207,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall12/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D7" type="LightOccluder2D" parent="Wall12" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1239,12 +1239,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall13/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D6" type="LightOccluder2D" parent="Wall13" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1270,12 +1270,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall14/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D5" type="LightOccluder2D" parent="Wall14" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1302,12 +1302,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall15/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D4" type="LightOccluder2D" parent="Wall15" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1333,12 +1333,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall16/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall16" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1365,12 +1365,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall17/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D5" type="LightOccluder2D" parent="Wall17" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1397,12 +1397,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall18/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D4" type="LightOccluder2D" parent="Wall18" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1429,12 +1429,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall19/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall19" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1460,12 +1460,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall20/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall20" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1486,11 +1486,11 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Chest/StaticBody2D" index="0"]
 
-shape = SubResource( 21 )
+shape = SubResource( 33 )
 
 [node name="LightOccluder2D4" type="LightOccluder2D" parent="Chest" index="1"]
 
-occluder = SubResource( 47 )
+occluder = SubResource( 34 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1511,11 +1511,11 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Desk/StaticBody2D" index="0"]
 
-shape = SubResource( 22 )
+shape = SubResource( 35 )
 
 [node name="LightOccluder2D5" type="LightOccluder2D" parent="Desk" index="1"]
 
-occluder = SubResource( 48 )
+occluder = SubResource( 36 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1542,7 +1542,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( -1.88729, 9.50126 )
 scale = Vector2( 2.08543, 0.791017 )
-shape = SubResource( 23 )
+shape = SubResource( 37 )
 
 [node name="Doctor w desk" type="Sprite" parent="." index="44"]
 
@@ -1581,11 +1581,11 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Crib/StaticBody2D" index="0"]
 
-shape = SubResource( 24 )
+shape = SubResource( 38 )
 
 [node name="LightOccluder2D6" type="LightOccluder2D" parent="Crib" index="1"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 39 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1610,11 +1610,11 @@ bounce = 0.0
 
 position = Vector2( 0, -19.2457 )
 scale = Vector2( 1, 1.32149 )
-shape = SubResource( 25 )
+shape = SubResource( 40 )
 
 [node name="LightOccluder2D7" type="LightOccluder2D" parent="Shelf1" index="1"]
 
-occluder = SubResource( 50 )
+occluder = SubResource( 41 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1640,11 +1640,11 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 0, -7.05722 )
 scale = Vector2( 1, 0.864219 )
-shape = SubResource( 26 )
+shape = SubResource( 42 )
 
 [node name="LightOccluder2D8" type="LightOccluder2D" parent="Shelf2" index="1"]
 
-occluder = SubResource( 51 )
+occluder = SubResource( 43 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1669,12 +1669,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf3/StaticBody2D" index="0"]
 
 position = Vector2( 0, -8.7 )
-shape = SubResource( 27 )
+shape = SubResource( 44 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D10" type="LightOccluder2D" parent="Shelf3" index="1"]
 
-occluder = SubResource( 52 )
+occluder = SubResource( 45 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1699,12 +1699,12 @@ _sections_unfolded = [ "Transform" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf4/StaticBody2D2" index="0"]
 
 position = Vector2( 0, -8.7 )
-shape = SubResource( 27 )
+shape = SubResource( 44 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D10" type="LightOccluder2D" parent="Shelf4" index="1"]
 
-occluder = SubResource( 52 )
+occluder = SubResource( 45 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1729,12 +1729,12 @@ _sections_unfolded = [ "Transform" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Shelf5/StaticBody2D3" index="0"]
 
 position = Vector2( 0, -8.7 )
-shape = SubResource( 27 )
+shape = SubResource( 44 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D9" type="LightOccluder2D" parent="Shelf5" index="1"]
 
-occluder = SubResource( 52 )
+occluder = SubResource( 45 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1759,11 +1759,11 @@ bounce = 0.0
 
 position = Vector2( 2, 2.52095 )
 scale = Vector2( 1, 0.616705 )
-shape = SubResource( 30 )
+shape = SubResource( 46 )
 
 [node name="LightOccluder2D10" type="LightOccluder2D" parent="Stool" index="1"]
 
-occluder = SubResource( 53 )
+occluder = SubResource( 47 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1787,12 +1787,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Divider1/StaticBody2D" index="0"]
 
 position = Vector2( -4.57226, -2.98154 )
-shape = SubResource( 31 )
+shape = SubResource( 48 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D5" type="LightOccluder2D" parent="Divider1" index="1"]
 
-occluder = SubResource( 32 )
+occluder = SubResource( 49 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1816,12 +1816,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Divider2/StaticBody2D" index="0"]
 
 position = Vector2( -7.60215, -10.1998 )
-shape = SubResource( 33 )
+shape = SubResource( 50 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D4" type="LightOccluder2D" parent="Divider2" index="1"]
 
-occluder = SubResource( 34 )
+occluder = SubResource( 51 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1845,12 +1845,12 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Divider3/StaticBody2D" index="0"]
 
 position = Vector2( -6.36452, -17.7311 )
-shape = SubResource( 35 )
+shape = SubResource( 52 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="LightOccluder2D6" type="LightOccluder2D" parent="Divider3" index="1"]
 
-occluder = SubResource( 36 )
+occluder = SubResource( 53 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1874,12 +1874,12 @@ bounce = 0.0
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall21/StaticBody2D2" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall21" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1903,12 +1903,12 @@ bounce = 0.0
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall22/StaticBody2D2" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall22" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1932,12 +1932,12 @@ bounce = 0.0
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall23/StaticBody2D2" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall23" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1961,12 +1961,12 @@ bounce = 0.0
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall24/StaticBody2D2" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall24" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -1990,12 +1990,12 @@ bounce = 0.0
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall25/StaticBody2D2" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall25" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -2019,12 +2019,12 @@ bounce = 0.0
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall26/StaticBody2D2" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall26" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -2048,12 +2048,12 @@ bounce = 0.0
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall27/StaticBody2D2" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall27" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
@@ -2077,12 +2077,12 @@ bounce = 0.0
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall28/StaticBody2D2" index="0"]
 
 position = Vector2( 0, -8 )
-shape = SubResource( 19 )
+shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall28" index="1"]
 
-occluder = SubResource( 20 )
+occluder = SubResource( 32 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
 
