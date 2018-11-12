@@ -1,5 +1,11 @@
 extends CanvasLayer
 
+onready var pic1 = $"pics/pic-1"
+onready var pic2 = $"pics/pic-2"
+onready var pic3 = $"pics/pic-3"
+onready var pic4 = $"pics/pic-4"
+onready var pic5 = $"pics/pic-5"
+
 var good_end = [
 	"What the hell?",
 	"Where is he? You told me he’d be here.",
@@ -36,6 +42,7 @@ onready var world = $"/root/World"
 func _ready():
 	# Called when the node is added to the scene for the first time.
 	# Initialization here
+	close_pic(true)
 	pass
 
 func _process(delta):
@@ -46,6 +53,19 @@ func _process(delta):
 #	# Update game logic here.
 #	pass
 
+func show_pic() :
+	$Tween.interpolate_method(self, "set_pic_opacity", $pics.modulate.a, 1, .5, Tween.TRANS_QUAD,Tween.EASE_OUT, 0)
+	$Tween.start()
+
+func close_pic(instant = false) :
+	if instant :
+		set_pic_opacity(0)
+	$Tween.interpolate_method(self, "set_pic_opacity", $pics.modulate.a, 0, .5, Tween.TRANS_QUAD,Tween.EASE_OUT, 0)
+	$Tween.start()
+
+func set_pic_opacity(a) :
+	$pics.modulate = Color(1,1,1,a)
+	
 func show_text(text):
 	
 	text_box.set_text(text)
@@ -59,6 +79,7 @@ func close_text():
 		if text_box.done :
 			$Tween.interpolate_property(self, "offset", offset, Vector2(0,200), .5, Tween.TRANS_QUAD,Tween.EASE_OUT, 0)
 			$Tween.start()
+			close_pic()
 			up = false
 			$"/root/World".message_up = up
 			

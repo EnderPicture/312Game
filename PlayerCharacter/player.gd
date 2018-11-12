@@ -114,7 +114,7 @@ func _physics_process(delta):
 			collider.queue_free()
 			
 		elif collider.get_name() == "ENDING" :
-			if world.l1_clue + world.l2_clue + world.l3_clue  > 5 :
+			if world.l1_clue + world.l2_clue + world.l3_clue >= 5 :
 				world.message.show_text(world.message.good_end[0])
 			else :
 				world.message.show_text(world.message.bad_end[0])
@@ -166,6 +166,23 @@ func _physics_process(delta):
 						world.message.show_text("The fourth of the five photo pieces, the edges ragged from where it’s been torn. It looks familiar, but I can’t tell what the picture is of yet. I pick it up.")
 					elif photo_pieces == 5 :
 						world.message.show_text("The final piece of the photo, the edges ragged from where it’s been torn. I have all five pieces now. I pull them out and arrange them around until I’ve reassembled the photo. I gasp, both in shock and rage. It’s a photo of me and Kyle from early last year.")
+				
+					if parrent_collider.type == "photop1" :
+						world.message.pic1.visible = true
+						world.message.show_pic()
+					if parrent_collider.type == "photop2" :
+						world.message.pic2.visible = true
+						world.message.show_pic()
+					if parrent_collider.type == "photop3" :
+						world.message.pic3.visible = true
+						world.message.show_pic()
+					if parrent_collider.type == "photop4" :
+						world.message.pic4.visible = true
+						world.message.show_pic()
+					if parrent_collider.type == "photop5" :
+						world.message.pic5.visible = true
+						world.message.show_pic()
+						
 				
 				elif parrent_collider.type == "clue1-1" :
 					world.sound.play()
