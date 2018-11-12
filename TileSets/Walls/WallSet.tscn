@@ -322,7 +322,7 @@ _sections_unfolded = [ "Resource" ]
 [sub_resource type="RectangleShape2D" id=31]
 
 custom_solver_bias = 0.0
-extents = Vector2( 8, 8 )
+extents = Vector2( 8, 6.5 )
 
 [sub_resource type="OccluderPolygon2D" id=32]
 
@@ -333,7 +333,7 @@ polygon = PoolVector2Array( -12.3487, -11.4736, -12.2976, -18.8243, 3.01645, -18
 [sub_resource type="RectangleShape2D" id=33]
 
 custom_solver_bias = 0.0
-extents = Vector2( 8, 8 )
+extents = Vector2( 8, 6.5 )
 
 [sub_resource type="OccluderPolygon2D" id=34]
 
@@ -344,7 +344,7 @@ polygon = PoolVector2Array( -15.2956, -18.3415, -15.1259, -25.0724, 0.145714, -2
 [sub_resource type="RectangleShape2D" id=35]
 
 custom_solver_bias = 0.0
-extents = Vector2( 8, 8 )
+extents = Vector2( 8, 6.5 )
 
 [sub_resource type="OccluderPolygon2D" id=36]
 
@@ -1785,7 +1785,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Divider1/StaticBody2D" index="0"]
 
-position = Vector2( -4.57226, -17.9815 )
+position = Vector2( -4.57226, -16.9815 )
 shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
