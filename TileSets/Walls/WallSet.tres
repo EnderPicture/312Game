@@ -323,34 +323,34 @@ points = PoolVector2Array( 8.12221, -1.15382, -8.01825, -1.00583, -7.90569, -8.1
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -12.3487, -11.4736, -12.2976, -18.8243, 3.01645, -18.7223, 3.01645, -11.5757 )
+polygon = PoolVector2Array( -12.3487, 5.4736, -12.2976, -2.82434, 3.01645, -2.72226, 3.01645, 5.57568 )
 
 [sub_resource type="RectangleShape2D" id=50]
 
 custom_solver_bias = 0.0
-extents = Vector2( 8, 8 )
+extents = Vector2( 8, 6.5 )
 
 [sub_resource type="OccluderPolygon2D" id=51]
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -15.2956, -18.3415, -15.1259, -25.0724, 0.145714, -25.1289, 0.202278, -18.285 )
+polygon = PoolVector2Array( -15.2956, -2.34152, -15.1259, -9.07236, 0.145714, -9.12891, 0.202278, -2.28497 )
 
 [sub_resource type="RectangleShape2D" id=52]
 
 custom_solver_bias = 0.0
-extents = Vector2( 8, 8 )
+extents = Vector2( 8, 6.5 )
 
 [sub_resource type="OccluderPolygon2D" id=53]
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -13.8757, -25.4928, -14.208, -31.6989, 1.31026, -31.8521, 1.33937, -25.5494 )
+polygon = PoolVector2Array( -13.8757, -9.4928, -14.208, -15.6989, 1.31026, -15.8521, 1.33937, -9.54938 )
 
 [sub_resource type="RectangleShape2D" id=54]
 
 custom_solver_bias = 0.0
-extents = Vector2( 8, 8 )
+extents = Vector2( 8, 6.5 )
 
 [sub_resource type="OccluderPolygon2D" id=55]
 
@@ -1209,7 +1209,7 @@ extents = Vector2( 8.09933, 10 )
 } ]
 54/name = "Divider1"
 54/texture = ExtResource( 32 )
-54/tex_offset = Vector2( -4, -17 )
+54/tex_offset = Vector2( -4, -1 )
 54/modulate = Color( 1, 1, 1, 1 )
 54/region = Rect2( 0, 0, 25, 24 )
 54/is_autotile = false
@@ -1219,12 +1219,17 @@ extents = Vector2( 8.09933, 10 )
 54/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+<<<<<<< HEAD
 "shape": SubResource( 50 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 7.92774, -5.98154 )
+=======
+"shape": SubResource( 31 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 7.92774, 11.0185 )
+>>>>>>> 68ec8d34f8f24e49b67fa59db0dd5dcc22dbe3e3
 } ]
 55/name = "Divider2"
 55/texture = ExtResource( 33 )
-55/tex_offset = Vector2( -8, -31 )
+55/tex_offset = Vector2( -8, -15 )
 55/modulate = Color( 1, 1, 1, 1 )
 55/region = Rect2( 0, 0, 31, 38 )
 55/is_autotile = false
@@ -1234,12 +1239,17 @@ extents = Vector2( 8.09933, 10 )
 55/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+<<<<<<< HEAD
 "shape": SubResource( 52 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 7.89785, -5.19981 )
+=======
+"shape": SubResource( 33 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 7.89785, 10.8002 )
+>>>>>>> 68ec8d34f8f24e49b67fa59db0dd5dcc22dbe3e3
 } ]
 56/name = "Divider3"
 56/texture = ExtResource( 34 )
-56/tex_offset = Vector2( -7, -45 )
+56/tex_offset = Vector2( -7, -29 )
 56/modulate = Color( 1, 1, 1, 1 )
 56/region = Rect2( 0, 0, 29, 52 )
 56/is_autotile = false
@@ -1249,8 +1259,13 @@ extents = Vector2( 8.09933, 10 )
 56/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
+<<<<<<< HEAD
 "shape": SubResource( 54 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 8.13548, -5.73111 )
+=======
+"shape": SubResource( 35 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 8.13548, 10.2689 )
+>>>>>>> 68ec8d34f8f24e49b67fa59db0dd5dcc22dbe3e3
 } ]
 57/name = "Wall21"
 57/texture = ExtResource( 35 )
