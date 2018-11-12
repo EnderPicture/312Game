@@ -322,7 +322,7 @@ _sections_unfolded = [ "Resource" ]
 [sub_resource type="RectangleShape2D" id=31]
 
 custom_solver_bias = 0.0
-extents = Vector2( 8.13988, 2.11247 )
+extents = Vector2( 8, 8 )
 
 [sub_resource type="OccluderPolygon2D" id=32]
 
@@ -333,7 +333,7 @@ polygon = PoolVector2Array( -12.3487, -11.4736, -12.2976, -18.8243, 3.01645, -18
 [sub_resource type="RectangleShape2D" id=33]
 
 custom_solver_bias = 0.0
-extents = Vector2( 7.86578, 1.72356 )
+extents = Vector2( 8, 8 )
 
 [sub_resource type="OccluderPolygon2D" id=34]
 
@@ -344,7 +344,7 @@ polygon = PoolVector2Array( -15.2956, -18.3415, -15.1259, -25.0724, 0.145714, -2
 [sub_resource type="RectangleShape2D" id=35]
 
 custom_solver_bias = 0.0
-extents = Vector2( 7.61739, 1.93675 )
+extents = Vector2( 8, 8 )
 
 [sub_resource type="OccluderPolygon2D" id=36]
 
@@ -352,7 +352,7 @@ closed = true
 cull_mode = 0
 polygon = PoolVector2Array( -13.8757, -25.4928, -14.208, -31.6989, 1.31026, -31.8521, 1.33937, -25.5494 )
 
-[node name="Node" type="Node" index="0"]
+[node name="Node" type="Node"]
 
 [node name="HotTop" type="Sprite" parent="." index="0"]
 
@@ -1784,9 +1784,9 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Divider1/StaticBody2D" index="0"]
 
-position = Vector2( -4.57226, -15.0355 )
-scale = Vector2( 1, 1.986 )
+position = Vector2( -4.57226, -17.9815 )
 shape = SubResource( 31 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D5" type="LightOccluder2D" parent="Divider1" index="1"]
 
@@ -1813,9 +1813,9 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Divider2/StaticBody2D" index="0"]
 
-position = Vector2( -7.60215, -22.0194 )
-scale = Vector2( 1.0404, 2.74366 )
+position = Vector2( -7.60215, -24.1998 )
 shape = SubResource( 33 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D4" type="LightOccluder2D" parent="Divider2" index="1"]
 
@@ -1842,9 +1842,9 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Divider3/StaticBody2D" index="0"]
 
-position = Vector2( -6.36452, -29.3908 )
-scale = Vector2( 1.06474, 2.53971 )
+position = Vector2( -6.36452, -31.7311 )
 shape = SubResource( 35 )
+_sections_unfolded = [ "Transform", "Z Index" ]
 
 [node name="LightOccluder2D6" type="LightOccluder2D" parent="Divider3" index="1"]
 
