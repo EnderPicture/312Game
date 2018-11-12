@@ -328,7 +328,7 @@ extents = Vector2( 8, 6.5 )
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -12.3487, 5.4736, -12.2976, -2.82434, 3.01645, -2.72226, 3.01645, 5.57568 )
+polygon = PoolVector2Array( -12.3487, 3.4736, -12.2976, -4.82434, 3.01645, -4.72226, 3.01645, 3.57568 )
 
 [sub_resource type="RectangleShape2D" id=33]
 
@@ -339,7 +339,7 @@ extents = Vector2( 8, 6.5 )
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -15.2956, -2.34152, -15.1259, -9.07236, 0.145714, -9.12891, 0.202278, -2.28497 )
+polygon = PoolVector2Array( -15.2956, -4.34152, -15.1259, -11.0724, 0.145714, -11.1289, 0.202278, -4.28497 )
 
 [sub_resource type="RectangleShape2D" id=35]
 
@@ -350,9 +350,9 @@ extents = Vector2( 8, 6.5 )
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -13.8757, -9.4928, -14.208, -15.6989, 1.31026, -15.8521, 1.33937, -9.54938 )
+polygon = PoolVector2Array( -13.8757, -11.4928, -14.208, -17.6989, 1.31026, -17.8521, 1.33937, -11.5494 )
 
-[node name="Node" type="Node" index="0"]
+[node name="Node" type="Node"]
 
 [node name="HotTop" type="Sprite" parent="." index="0"]
 
@@ -1770,7 +1770,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 81.2374, 313.679 )
 texture = ExtResource( 35 )
-offset = Vector2( -4, -1 )
+offset = Vector2( -4, -3 )
 _sections_unfolded = [ "Offset" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Divider1" index="0"]
@@ -1785,7 +1785,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Divider1/StaticBody2D" index="0"]
 
-position = Vector2( -4.57226, -0.981539 )
+position = Vector2( -4.57226, -2.98154 )
 shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
@@ -1799,7 +1799,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 116.826, 320.473 )
 texture = ExtResource( 36 )
-offset = Vector2( -8, -15 )
+offset = Vector2( -8, -17 )
 _sections_unfolded = [ "Offset" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Divider2" index="0"]
@@ -1814,7 +1814,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Divider2/StaticBody2D" index="0"]
 
-position = Vector2( -7.60215, -8.19981 )
+position = Vector2( -7.60215, -10.1998 )
 shape = SubResource( 33 )
 _sections_unfolded = [ "Transform" ]
 
@@ -1828,7 +1828,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 163.738, 329.208 )
 texture = ExtResource( 37 )
-offset = Vector2( -7, -29 )
+offset = Vector2( -7, -31 )
 _sections_unfolded = [ "Offset" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Divider3" index="0"]
@@ -1843,7 +1843,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Divider3/StaticBody2D" index="0"]
 
-position = Vector2( -6.36452, -15.7311 )
+position = Vector2( -6.36452, -17.7311 )
 shape = SubResource( 35 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 
