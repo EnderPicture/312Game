@@ -186,7 +186,7 @@ extents = Vector2( 8.00444, 10 )
 custom_solver_bias = 0.0
 extents = Vector2( 5.75042, 5.94293 )
 
-[node name="Node" type="Node"]
+[node name="Node" type="Node" index="0"]
 
 [node name="HotTop" type="Sprite" parent="." index="0"]
 
@@ -394,9 +394,10 @@ _sections_unfolded = [ "Offset" ]
 
 [node name="Dresser" type="Sprite" parent="." index="10"]
 
-editor/display_folded = true
 position = Vector2( 111.708, -3.47008 )
 texture = ExtResource( 11 )
+offset = Vector2( 0, -5 )
+_sections_unfolded = [ "Offset" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Dresser" index="0"]
 
@@ -410,7 +411,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Dresser/StaticBody2D" index="0"]
 
-position = Vector2( -0.000959888, -0.136721 )
+position = Vector2( -0.000959888, -5.13672 )
 scale = Vector2( 0.804961, 1.04763 )
 shape = SubResource( 10 )
 
@@ -577,8 +578,10 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="NightStand" type="Sprite" parent="." index="18"]
 
-position = Vector2( 110.738, 32.7656 )
+position = Vector2( 110.422, 48.7013 )
 texture = ExtResource( 19 )
+offset = Vector2( 0, -16 )
+_sections_unfolded = [ "Offset" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="NightStand" index="0"]
 
@@ -592,7 +595,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NightStand/StaticBody2D" index="0"]
 
-position = Vector2( 0.00814056, 2.84211 )
+position = Vector2( 0.00814056, -9.1579 )
 scale = Vector2( 0.819557, 1.59814 )
 shape = SubResource( 18 )
 

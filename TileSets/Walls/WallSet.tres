@@ -373,7 +373,7 @@ extents = Vector2( 24, 10 )
 9/shapes = [  ]
 10/name = "Dresser"
 10/texture = ExtResource( 3 )
-10/tex_offset = Vector2( 0, 0 )
+10/tex_offset = Vector2( 0, -5 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 0, 0, 16, 21 )
 10/is_autotile = false
@@ -383,7 +383,7 @@ extents = Vector2( 24, 10 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "shape": SubResource( 3 ),
-"shape_transform": Transform2D( 0.804961, 0, 0, 1.04763, 7.99904, 10.3633 )
+"shape_transform": Transform2D( 0.804961, 0, 0, 1.04763, 7.99904, 5.36328 )
 } ]
 11/name = "StorageShelf1"
 11/texture = ExtResource( 4 )
@@ -485,7 +485,7 @@ extents = Vector2( 24, 10 )
 } ]
 18/name = "NightStand"
 18/texture = ExtResource( 11 )
-18/tex_offset = Vector2( 0, 0 )
+18/tex_offset = Vector2( 0, -16 )
 18/modulate = Color( 1, 1, 1, 1 )
 18/region = Rect2( 0, 0, 16, 32 )
 18/is_autotile = false
@@ -495,7 +495,7 @@ extents = Vector2( 24, 10 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "shape": SubResource( 11 ),
-"shape_transform": Transform2D( 0.819557, 0, 0, 1.59814, 8.00814, 18.8421 )
+"shape_transform": Transform2D( 0.819557, 0, 0, 1.59814, 8.00814, 5.84211 )
 } ]
 19/name = "Wall"
 19/texture = ExtResource( 12 )
@@ -903,7 +903,7 @@ extents = Vector2( 24, 10 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "shape": SubResource( 26 ),
-"shape_transform": Transform2D( 1, 0, 0, 1.32149, 8, 2.75426 )
+"shape_transform": Transform2D( 1, 0, 0, 1.32149, 8, 2.7543 )
 } ]
 47/name = "Shelf2"
 47/texture = ExtResource( 24 )
