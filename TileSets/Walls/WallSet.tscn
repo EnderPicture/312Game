@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=71 format=2]
 
 [ext_resource path="res://TileSets/Walls/PNGs/HotTop.png" type="Texture" id=1]
 [ext_resource path="res://TileSets/Walls/PNGs/BigBed.png" type="Texture" id=2]
@@ -34,6 +34,9 @@
 [ext_resource path="res://TileSets/Walls/PNGs/Shelf4.png" type="Texture" id=32]
 [ext_resource path="res://TileSets/Walls/PNGs/Shelf5.png" type="Texture" id=33]
 [ext_resource path="res://TileSets/Walls/PNGs/Stool.png" type="Texture" id=34]
+[ext_resource path="res://TileSets/Walls/PNGs/Divider1.png" type="Texture" id=35]
+[ext_resource path="res://TileSets/Walls/PNGs/Divider2.png" type="Texture" id=36]
+[ext_resource path="res://TileSets/Walls/PNGs/Divider3.png" type="Texture" id=37]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -186,7 +189,22 @@ extents = Vector2( 8.00444, 10 )
 custom_solver_bias = 0.0
 extents = Vector2( 5.75042, 5.94293 )
 
-[node name="Node" type="Node" index="0"]
+[sub_resource type="RectangleShape2D" id=31]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.13988, 2.11247 )
+
+[sub_resource type="RectangleShape2D" id=32]
+
+custom_solver_bias = 0.0
+extents = Vector2( 7.86578, 1.72356 )
+
+[sub_resource type="RectangleShape2D" id=33]
+
+custom_solver_bias = 0.0
+extents = Vector2( 7.61739, 1.93675 )
+
+[node name="Node" type="Node"]
 
 [node name="HotTop" type="Sprite" parent="." index="0"]
 
@@ -1457,5 +1475,74 @@ bounce = 0.0
 
 position = Vector2( 2, 0 )
 shape = SubResource( 30 )
+
+[node name="Divider1" type="Sprite" parent="." index="52"]
+
+position = Vector2( 81.2374, 313.679 )
+texture = ExtResource( 35 )
+offset = Vector2( -4, -17 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Divider1" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Divider1/StaticBody2D" index="0"]
+
+position = Vector2( -4.57226, -15.0355 )
+scale = Vector2( 1, 1.986 )
+shape = SubResource( 31 )
+
+[node name="Divider2" type="Sprite" parent="." index="53"]
+
+position = Vector2( 116.826, 320.473 )
+texture = ExtResource( 36 )
+offset = Vector2( -8, -31 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Divider2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Divider2/StaticBody2D" index="0"]
+
+position = Vector2( -7.60215, -22.0194 )
+scale = Vector2( 1.0404, 2.74366 )
+shape = SubResource( 32 )
+
+[node name="Divider3" type="Sprite" parent="." index="54"]
+
+position = Vector2( 163.738, 329.208 )
+texture = ExtResource( 37 )
+offset = Vector2( -7, -45 )
+_sections_unfolded = [ "Offset" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Divider3" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Divider3/StaticBody2D" index="0"]
+
+position = Vector2( -6.36452, -29.3908 )
+scale = Vector2( 1.06474, 2.53971 )
+shape = SubResource( 33 )
 
 

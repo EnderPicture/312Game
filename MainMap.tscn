@@ -119,20 +119,40 @@ extents = Vector2( 35.9014, 8.81895 )
 custom_solver_bias = 0.0
 extents = Vector2( 23.3647, 10.2142 )
 
-[sub_resource type="RectangleShape2D" id=10]
+[sub_resource type="RectangleShape2D" id=6]
 
 custom_solver_bias = 0.0
 extents = Vector2( 7.4314, 5 )
 
-[sub_resource type="RectangleShape2D" id=11]
+[sub_resource type="RectangleShape2D" id=7]
 
 custom_solver_bias = 0.0
 extents = Vector2( 7.44229, 5 )
 
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="RectangleShape2D" id=8]
 
 custom_solver_bias = 0.0
 extents = Vector2( 5, 5 )
+
+[sub_resource type="RectangleShape2D" id=9]
+
+custom_solver_bias = 0.0
+extents = Vector2( 5, 5 )
+
+[sub_resource type="RectangleShape2D" id=10]
+
+custom_solver_bias = 0.0
+extents = Vector2( 5, 5 )
+
+[sub_resource type="RectangleShape2D" id=11]
+
+custom_solver_bias = 0.0
+extents = Vector2( 21.2385, 5 )
+
+[sub_resource type="RectangleShape2D" id=12]
+
+custom_solver_bias = 0.0
+extents = Vector2( 7.0676, 5 )
 
 [sub_resource type="RectangleShape2D" id=13]
 
@@ -147,22 +167,22 @@ extents = Vector2( 5, 5 )
 [sub_resource type="RectangleShape2D" id=15]
 
 custom_solver_bias = 0.0
-extents = Vector2( 21.2385, 5 )
+extents = Vector2( 5, 5 )
 
 [sub_resource type="RectangleShape2D" id=16]
 
 custom_solver_bias = 0.0
-extents = Vector2( 7.0676, 5 )
+extents = Vector2( 7.30916, 5 )
 
 [sub_resource type="RectangleShape2D" id=17]
 
 custom_solver_bias = 0.0
-extents = Vector2( 5, 5 )
+extents = Vector2( 6.1267, 5 )
 
 [sub_resource type="RectangleShape2D" id=18]
 
 custom_solver_bias = 0.0
-extents = Vector2( 5, 5 )
+extents = Vector2( 7.51587, 5 )
 
 [sub_resource type="RectangleShape2D" id=19]
 
@@ -172,94 +192,74 @@ extents = Vector2( 5, 5 )
 [sub_resource type="RectangleShape2D" id=20]
 
 custom_solver_bias = 0.0
-extents = Vector2( 7.30916, 5 )
+extents = Vector2( 5, 5 )
 
 [sub_resource type="RectangleShape2D" id=21]
 
 custom_solver_bias = 0.0
-extents = Vector2( 6.1267, 5 )
+extents = Vector2( 7.70789, 5 )
 
 [sub_resource type="RectangleShape2D" id=22]
 
 custom_solver_bias = 0.0
-extents = Vector2( 7.51587, 5 )
+extents = Vector2( 7.90027, 5 )
 
 [sub_resource type="RectangleShape2D" id=23]
 
 custom_solver_bias = 0.0
-extents = Vector2( 5, 5 )
-
-[sub_resource type="RectangleShape2D" id=6]
-
-custom_solver_bias = 0.0
-extents = Vector2( 5, 5 )
+extents = Vector2( 5, 30.6469 )
 
 [sub_resource type="RectangleShape2D" id=24]
 
 custom_solver_bias = 0.0
-extents = Vector2( 7.70789, 5 )
+extents = Vector2( 5, 5 )
 
 [sub_resource type="RectangleShape2D" id=25]
 
 custom_solver_bias = 0.0
-extents = Vector2( 7.90027, 5 )
-
-[sub_resource type="RectangleShape2D" id=7]
-
-custom_solver_bias = 0.0
-extents = Vector2( 5, 30.6469 )
+extents = Vector2( 15.3764, 5 )
 
 [sub_resource type="RectangleShape2D" id=26]
 
 custom_solver_bias = 0.0
-extents = Vector2( 5, 5 )
+extents = Vector2( 23.0118, 5 )
 
 [sub_resource type="RectangleShape2D" id=27]
 
 custom_solver_bias = 0.0
-extents = Vector2( 15.3764, 5 )
+extents = Vector2( 7.00156, 5 )
 
 [sub_resource type="RectangleShape2D" id=28]
 
 custom_solver_bias = 0.0
-extents = Vector2( 23.0118, 5 )
+extents = Vector2( 5, 5 )
 
 [sub_resource type="RectangleShape2D" id=29]
 
 custom_solver_bias = 0.0
-extents = Vector2( 7.00156, 5 )
+extents = Vector2( 8.60121, 31.9788 )
 
 [sub_resource type="RectangleShape2D" id=30]
 
 custom_solver_bias = 0.0
-extents = Vector2( 5, 5 )
-
-[sub_resource type="RectangleShape2D" id=8]
-
-custom_solver_bias = 0.0
-extents = Vector2( 8.60121, 31.9788 )
+extents = Vector2( 5.78996, 5 )
 
 [sub_resource type="RectangleShape2D" id=31]
 
 custom_solver_bias = 0.0
-extents = Vector2( 5.78996, 5 )
+extents = Vector2( 7.87461, 5 )
 
 [sub_resource type="RectangleShape2D" id=32]
 
 custom_solver_bias = 0.0
-extents = Vector2( 7.87461, 5 )
+extents = Vector2( 7.98729, 5 )
 
 [sub_resource type="RectangleShape2D" id=33]
 
 custom_solver_bias = 0.0
-extents = Vector2( 7.98729, 5 )
-
-[sub_resource type="RectangleShape2D" id=34]
-
-custom_solver_bias = 0.0
 extents = Vector2( 7.87115, 5 )
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=34]
 
 custom_solver_bias = 0.0
 extents = Vector2( 35.1382, 15.2541 )
@@ -969,7 +969,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L2/Interaction_pointL2-1" index="0"]
 
 position = Vector2( -0.736084, -3.7917 )
-shape = SubResource( 10 )
+shape = SubResource( 6 )
 
 [node name="Interaction_pointL2-2-1" type="Area2D" parent="Areas/L2" index="2"]
 
@@ -988,7 +988,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L2/Interaction_pointL2-2-1" index="0"]
 
 position = Vector2( -1.50714, -2.67517 )
-shape = SubResource( 11 )
+shape = SubResource( 7 )
 
 [node name="Interaction_pointL2-2-2" type="Area2D" parent="Areas/L2" index="3"]
 
@@ -1008,7 +1008,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( -9.73608, 7.67925 )
 scale = Vector2( 1, 1.68387 )
-shape = SubResource( 12 )
+shape = SubResource( 8 )
 
 [node name="Interaction_pointL2-2-3" type="Area2D" parent="Areas/L2" index="4"]
 
@@ -1028,7 +1028,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( -5.9305, 9.2083 )
 scale = Vector2( 1.6493, 1 )
-shape = SubResource( 13 )
+shape = SubResource( 9 )
 
 [node name="Interaction_pointL2-2-4" type="Area2D" parent="Areas/L2" index="5"]
 
@@ -1048,7 +1048,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( 5.73242, -4.00648 )
 scale = Vector2( 1, 1.49694 )
-shape = SubResource( 14 )
+shape = SubResource( 10 )
 
 [node name="Interaction_pointL2-3" type="Area2D" parent="Areas/L2" index="6"]
 
@@ -1068,7 +1068,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( -0.736084, -5.47389 )
 scale = Vector2( 1, 1.21027 )
-shape = SubResource( 15 )
+shape = SubResource( 11 )
 
 [node name="Interaction_pointL2-4" type="Area2D" parent="Areas/L2" index="7"]
 
@@ -1088,7 +1088,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( 0.106735, -0.7917 )
 scale = Vector2( 1.01561, 1 )
-shape = SubResource( 16 )
+shape = SubResource( 12 )
 
 [node name="Interaction_pointL2-5-1" type="Area2D" parent="Areas/L2" index="8"]
 
@@ -1108,7 +1108,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( -6.73608, 2.37496 )
 scale = Vector2( 1, 1.52608 )
-shape = SubResource( 17 )
+shape = SubResource( 13 )
 
 [node name="Interaction_pointL2-5-2" type="Area2D" parent="Areas/L2" index="9"]
 
@@ -1128,7 +1128,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( -6.73608, 0.376444 )
 scale = Vector2( 1, 1.74676 )
-shape = SubResource( 18 )
+shape = SubResource( 14 )
 
 [node name="Interaction_pointL2-6" type="Area2D" parent="Areas/L2" index="10"]
 
@@ -1148,7 +1148,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( -0.613033, -5.67878 )
 scale = Vector2( 1.26538, 1.61089 )
-shape = SubResource( 19 )
+shape = SubResource( 15 )
 
 [node name="Interaction_pointL2-7" type="Area2D" parent="Areas/L2" index="11"]
 
@@ -1167,7 +1167,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L2/Interaction_pointL2-7" index="0"]
 
 position = Vector2( 6.10869, -42.7435 )
-shape = SubResource( 20 )
+shape = SubResource( 16 )
 
 [node name="Interaction_pointL2-8" type="Area2D" parent="Areas/L2" index="12"]
 
@@ -1187,7 +1187,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( -6.37021, -25.2619 )
 scale = Vector2( 2.40614, 4.52083 )
-shape = SubResource( 21 )
+shape = SubResource( 17 )
 
 [node name="Interaction_pointL2-9" type="Area2D" parent="Areas/L2" index="13"]
 
@@ -1206,7 +1206,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L2/Interaction_pointL2-9" index="0"]
 
 position = Vector2( -0.736084, -2.7917 )
-shape = SubResource( 22 )
+shape = SubResource( 18 )
 
 [node name="clueL2-1" type="Area2D" parent="Areas/L2" index="14"]
 
@@ -1226,7 +1226,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( -10.7361, 2.62737 )
 scale = Vector2( 1, 1.40441 )
-shape = SubResource( 23 )
+shape = SubResource( 19 )
 
 [node name="clueL2-2" type="Area2D" parent="Areas/L2" index="15"]
 
@@ -1245,7 +1245,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L2/clueL2-2" index="0"]
 
 position = Vector2( -0.736084, 2.2083 )
-shape = SubResource( 6 )
+shape = SubResource( 20 )
 
 [node name="screwdriverL2" type="Area2D" parent="Areas/L2" index="16"]
 
@@ -1264,7 +1264,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L2/screwdriverL2" index="0"]
 
 position = Vector2( -0.479034, 0.666199 )
-shape = SubResource( 24 )
+shape = SubResource( 21 )
 
 [node name="lockeddoorL2" type="Area2D" parent="Areas/L2" index="17"]
 
@@ -1283,7 +1283,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L2/lockeddoorL2" index="0"]
 
 position = Vector2( -0.451294, -4.63962 )
-shape = SubResource( 25 )
+shape = SubResource( 22 )
 
 [node name="phonepromptL2" type="Area2D" parent="Areas/L2" index="18"]
 
@@ -1302,7 +1302,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L2/phonepromptL2" index="0"]
 
 position = Vector2( -0.736084, 2.2083 )
-shape = SubResource( 7 )
+shape = SubResource( 23 )
 
 [node name="puzzleL2-1-locked" type="Area2D" parent="Areas/L2" index="19"]
 
@@ -1322,7 +1322,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( -7.1617, 2.28641 )
 scale = Vector2( 1, 1.78308 )
-shape = SubResource( 26 )
+shape = SubResource( 24 )
 
 [node name="puzzleL2-2" type="Area2D" parent="Areas/L2" index="20"]
 
@@ -1341,7 +1341,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L2/puzzleL2-2" index="0"]
 
 position = Vector2( 2.0611, 9.90059 )
-shape = SubResource( 27 )
+shape = SubResource( 25 )
 
 [node name="puzzleL2-3" type="Area2D" parent="Areas/L2" index="21"]
 
@@ -1361,7 +1361,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( -0.736084, -3.35258 )
 scale = Vector2( 1, 1.82473 )
-shape = SubResource( 28 )
+shape = SubResource( 26 )
 
 [node name="puzzleL2-4" type="Area2D" parent="Areas/L2" index="22"]
 
@@ -1380,7 +1380,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L2/puzzleL2-4" index="0"]
 
 position = Vector2( -0.452667, -1.79169 )
-shape = SubResource( 29 )
+shape = SubResource( 27 )
 
 [node name="puzzleL2-5" type="Area2D" parent="Areas/L2" index="23"]
 
@@ -1400,7 +1400,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( 0.281452, -12.3491 )
 scale = Vector2( 1.32442, 3.52045 )
-shape = SubResource( 30 )
+shape = SubResource( 28 )
 
 [node name="L3" type="Node" parent="Areas" index="2"]
 
@@ -1419,7 +1419,7 @@ audio_bus_name = "Master"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L3/enteredL3" index="0"]
 
 position = Vector2( -9.74846, 10.969 )
-shape = SubResource( 8 )
+shape = SubResource( 29 )
 
 [node name="KeyL3" type="Area2D" parent="Areas/L3" index="1"]
 
@@ -1438,7 +1438,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L3/KeyL3" index="0"]
 
 position = Vector2( -1.83168, -3.69901 )
-shape = SubResource( 31 )
+shape = SubResource( 30 )
 
 [node name="ClueL3-1" type="Area2D" parent="Areas/L3" index="2"]
 
@@ -1457,7 +1457,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L3/ClueL3-1" index="0"]
 
 position = Vector2( -1.9152, -1.74274 )
-shape = SubResource( 32 )
+shape = SubResource( 31 )
 
 [node name="ClueL3-2" type="Area2D" parent="Areas/L3" index="3"]
 
@@ -1476,7 +1476,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L3/ClueL3-2" index="0"]
 
 position = Vector2( -2.15384, 0.731445 )
-shape = SubResource( 33 )
+shape = SubResource( 32 )
 
 [node name="ClueL3-3" type="Area2D" parent="Areas/L3" index="4"]
 
@@ -1495,7 +1495,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L3/ClueL3-3" index="0"]
 
 position = Vector2( -0.147736, -1.75194 )
-shape = SubResource( 34 )
+shape = SubResource( 33 )
 
 [node name="lockeddoorL3-2" type="Area2D" parent="Areas/L3" index="5"]
 
@@ -1514,7 +1514,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L3/lockeddoorL3-2" index="0"]
 
 position = Vector2( -0.736084, 2.2083 )
-shape = SubResource( 6 )
+shape = SubResource( 20 )
 
 [node name="lockeddoorL3-3" type="Area2D" parent="Areas/L3" index="6"]
 
@@ -1533,7 +1533,7 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L3/lockeddoorL3-3" index="0"]
 
 position = Vector2( -0.736084, 2.2083 )
-shape = SubResource( 6 )
+shape = SubResource( 20 )
 
 [node name="ENDING" type="Area2D" parent="Areas/L3" index="7"]
 
@@ -1550,7 +1550,7 @@ audio_bus_name = "Master"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/L3/ENDING" index="0"]
 
 position = Vector2( -4.60425, 28.1164 )
-shape = SubResource( 9 )
+shape = SubResource( 34 )
 
 [node name="Tween" type="Tween" parent="." index="9"]
 
