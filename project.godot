@@ -12,6 +12,7 @@ config_version=3
 
 config/name="Unnamed_312ProjectFile_Draft"
 run/main_scene="res://MainMap.tscn"
+boot_splash/image="res://TitleScreen2.png"
 config/icon="res://icon.png"
 
 [display]

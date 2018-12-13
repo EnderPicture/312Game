@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=2]
+[gd_scene load_steps=91 format=2]
 
 [ext_resource path="res://TileSets/Walls/PNGs/HotTop.png" type="Texture" id=1]
 [ext_resource path="res://TileSets/Walls/PNGs/BigBed.png" type="Texture" id=2]
@@ -37,14 +37,6 @@
 [ext_resource path="res://TileSets/Walls/PNGs/Divider1.png" type="Texture" id=35]
 [ext_resource path="res://TileSets/Walls/PNGs/Divider2.png" type="Texture" id=36]
 [ext_resource path="res://TileSets/Walls/PNGs/Divider3.png" type="Texture" id=37]
-[ext_resource path="res://TileSets/Walls/PNGs/Wall21.png" type="Texture" id=38]
-[ext_resource path="res://TileSets/Walls/PNGs/Wall22.png" type="Texture" id=39]
-[ext_resource path="res://TileSets/Walls/PNGs/Wall23.png" type="Texture" id=40]
-[ext_resource path="res://TileSets/Walls/PNGs/Wall24.png" type="Texture" id=41]
-[ext_resource path="res://TileSets/Walls/PNGs/Wall25.png" type="Texture" id=42]
-[ext_resource path="res://TileSets/Walls/PNGs/Wall26.png" type="Texture" id=43]
-[ext_resource path="res://TileSets/Walls/PNGs/Wall27.png" type="Texture" id=44]
-[ext_resource path="res://TileSets/Walls/PNGs/Wall28.png" type="Texture" id=45]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -107,13 +99,13 @@ _sections_unfolded = [ "Resource" ]
 [sub_resource type="RectangleShape2D" id=11]
 
 custom_solver_bias = 0.0
-extents = Vector2( 23.5927, 7.19516 )
+extents = Vector2( 23.5927, 6.468 )
 
 [sub_resource type="OccluderPolygon2D" id=12]
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -23, 10, -23, -4.3, 23.8, -4.3, 23.8, 10 )
+polygon = PoolVector2Array( -18.8758, 2.37932, -18.8758, -7.27222, 19.1036, -7.52291, 19.1663, 2.37932 )
 _sections_unfolded = [ "Resource" ]
 
 [sub_resource type="RectangleShape2D" id=13]
@@ -316,7 +308,7 @@ extents = Vector2( 4.25664, 5.94293 )
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -2, 6, -2, -1, 6, -1, 6, 6 )
+polygon = PoolVector2Array( -3.98403, 3.97409, -4.00893, -3.27016, 4.08173, -3.071, 4.20621, 3.99899 )
 _sections_unfolded = [ "Resource" ]
 
 [sub_resource type="RectangleShape2D" id=48]
@@ -328,7 +320,7 @@ extents = Vector2( 8, 6.5 )
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -11.3487, 3.4736, -11.2976, -4.82434, 2.01645, -4.72226, 2.01645, 3.57568 )
+polygon = PoolVector2Array( -4.02908, 1.7088, -10.4178, 0.597717, -11.8761, -1.76337, -9.02897, -4.67996, -4.2374, -4.6105, 0.554169, -3.70776, 1.94302, -1.34671, 0.762497, 0.389374 )
 
 [sub_resource type="RectangleShape2D" id=50]
 
@@ -339,7 +331,7 @@ extents = Vector2( 8, 6.5 )
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -14.2956, -4.34152, -14.1259, -11.0724, -1.14571, -11.1289, -1.20228, -4.28497 )
+polygon = PoolVector2Array( -7.535, -4.32138, -9.82662, -4.94638, -12.1877, -5.71024, -13.5071, -7.09912, -13.7154, -8.76575, -11.771, -10.9185, -8.43777, -10.9879, -4.47952, -10.5713, -2.32677, -9.39072, -1.63235, -7.51575, -2.049, -5.84912, -4.27119, -4.1825 )
 
 [sub_resource type="RectangleShape2D" id=52]
 
@@ -350,7 +342,7 @@ extents = Vector2( 8, 6.5 )
 
 closed = true
 cull_mode = 0
-polygon = PoolVector2Array( -13.6757, -11.4928, -13.208, -17.6989, 0.31026, -17.8521, 0.33937, -11.5494 )
+polygon = PoolVector2Array( -6.87857, -17.9174, -9.86461, -17.4312, -12.0173, -16.1118, -13.1284, -14.3758, -12.2257, -12.7091, -8.68408, -11.5286, -4.17029, -11.6675, -1.11479, -12.5008, 0.135178, -13.9591, -0.55925, -16.459, -2.08701, -17.6396 )
 
 [node name="Node" type="Node" index="0"]
 
@@ -521,6 +513,8 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 36.9723, 119.472 )
 texture = ExtResource( 7 )
+offset = Vector2( 0, -8 )
+_sections_unfolded = [ "Offset" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Island" index="0"]
 
@@ -534,7 +528,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Island/StaticBody2D" index="0"]
 
-position = Vector2( 0.272511, 2.78905 )
+position = Vector2( 0.272511, -4.21095 )
 shape = SubResource( 11 )
 _sections_unfolded = [ "Transform" ]
 
@@ -1741,7 +1735,7 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 88.1118, 180.676 )
 texture = ExtResource( 34 )
-offset = Vector2( 2, 0 )
+offset = Vector2( 0, -2 )
 _sections_unfolded = [ "Offset" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Stool" index="0"]
@@ -1756,7 +1750,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stool/StaticBody2D" index="0"]
 
-position = Vector2( 2, 2.52095 )
+position = Vector2( 4.76837e-007, 0.52095 )
 scale = Vector2( 1, 0.616705 )
 shape = SubResource( 46 )
 
@@ -1820,6 +1814,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D4" type="LightOccluder2D" parent="Divider2" index="1"]
 
+position = Vector2( 0.208328, -0.486053 )
 occluder = SubResource( 51 )
 light_mask = 1
 _sections_unfolded = [ "Transform" ]
@@ -1855,10 +1850,13 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall21" type="Sprite" parent="." index="55"]
 
+editor/display_folded = true
 position = Vector2( 434.406, 363.949 )
-texture = ExtResource( 38 )
+texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
-_sections_unfolded = [ "Offset" ]
+region_enabled = true
+region_rect = Rect2( 112, 64, 16, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Wall21" index="0"]
 
@@ -1884,10 +1882,13 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall22" type="Sprite" parent="." index="56"]
 
+editor/display_folded = true
 position = Vector2( 459.406, 363.949 )
-texture = ExtResource( 39 )
+texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
-_sections_unfolded = [ "Offset" ]
+region_enabled = true
+region_rect = Rect2( 112, 32, 16, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Wall22" index="0"]
 
@@ -1913,10 +1914,13 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall23" type="Sprite" parent="." index="57"]
 
+editor/display_folded = true
 position = Vector2( 481.406, 363.949 )
-texture = ExtResource( 40 )
+texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
-_sections_unfolded = [ "Offset" ]
+region_enabled = true
+region_rect = Rect2( 128, 64, 16, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Wall23" index="0"]
 
@@ -1942,10 +1946,13 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall24" type="Sprite" parent="." index="58"]
 
+editor/display_folded = true
 position = Vector2( 505.406, 363.949 )
-texture = ExtResource( 41 )
+texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
-_sections_unfolded = [ "Offset" ]
+region_enabled = true
+region_rect = Rect2( 128, 96, 16, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Wall24" index="0"]
 
@@ -1971,10 +1978,13 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall25" type="Sprite" parent="." index="59"]
 
+editor/display_folded = true
 position = Vector2( 529.406, 363.949 )
-texture = ExtResource( 42 )
+texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
-_sections_unfolded = [ "Offset" ]
+region_enabled = true
+region_rect = Rect2( 80, 64, 16, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Wall25" index="0"]
 
@@ -2000,10 +2010,13 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall26" type="Sprite" parent="." index="60"]
 
+editor/display_folded = true
 position = Vector2( 555.406, 363.949 )
-texture = ExtResource( 43 )
+texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
-_sections_unfolded = [ "Offset" ]
+region_enabled = true
+region_rect = Rect2( 96, 32, 16, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Wall26" index="0"]
 
@@ -2029,10 +2042,13 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall27" type="Sprite" parent="." index="61"]
 
+editor/display_folded = true
 position = Vector2( 582.406, 363.949 )
-texture = ExtResource( 44 )
+texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
-_sections_unfolded = [ "Offset" ]
+region_enabled = true
+region_rect = Rect2( 80, 96, 16, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Wall27" index="0"]
 
@@ -2058,10 +2074,13 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Wall28" type="Sprite" parent="." index="62"]
 
+editor/display_folded = true
 position = Vector2( 608.406, 363.949 )
-texture = ExtResource( 45 )
+texture = ExtResource( 20 )
 offset = Vector2( 0, -16 )
-_sections_unfolded = [ "Offset" ]
+region_enabled = true
+region_rect = Rect2( 96, 64, 16, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Wall28" index="0"]
 
@@ -2080,6 +2099,70 @@ shape = SubResource( 31 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall28" index="1"]
+
+occluder = SubResource( 32 )
+light_mask = 1
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall29" type="Sprite" parent="." index="63"]
+
+editor/display_folded = true
+position = Vector2( 637.17, 363.949 )
+texture = ExtResource( 20 )
+offset = Vector2( 0, -16 )
+region_enabled = true
+region_rect = Rect2( 128, 32, 16, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Wall29" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall29/StaticBody2D2" index="0"]
+
+position = Vector2( 0, -8 )
+shape = SubResource( 31 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall29" index="1"]
+
+occluder = SubResource( 32 )
+light_mask = 1
+_sections_unfolded = [ "Transform" ]
+
+[node name="Wall30" type="Sprite" parent="." index="64"]
+
+editor/display_folded = true
+position = Vector2( 637.17, 363.949 )
+texture = ExtResource( 20 )
+offset = Vector2( 0, -16 )
+region_enabled = true
+region_rect = Rect2( 112, 0, 16, 32 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Wall30" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall30/StaticBody2D2" index="0"]
+
+position = Vector2( 0, -8 )
+shape = SubResource( 31 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="LightOccluder2D3" type="LightOccluder2D" parent="Wall30" index="1"]
 
 occluder = SubResource( 32 )
 light_mask = 1
